@@ -3,42 +3,57 @@
 
 @charset "utf-8";
 
-// Example Defaults
-// $base-font-family: Helvetica, Arial, sans-serif;
-// $base-font-size:   16px;
-// $small-font-size:  $base-font-size * 0.875;
-// $base-line-height: 1.5;
-
-// $spacing-unit:     30px;
-
-// $text-color:       #111;
-// $background-color: #fdfdfd;
-// $brand-color:      #2a7ae2;
-
-// $grey-color:       #828282;
-// $grey-color-light: lighten($grey-color, 40%);
-// $grey-color-dark:  darken($grey-color, 25%);
-
-// // Width of the content area
-// $content-width:    800px;
-
-// $on-palm:          600px;
-// $on-laptop:        800px;
-
-// Using media queries with like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-
 // variables.less
-$theme-primary: #AF7521;
-$theme-dark: #222222;
+//ColorPalette
+$grey-1: #FFFFFF;
+$grey-2: #F5F8FA;
+$grey-3: #E1E8ED;
+$grey-4: #CED9E0;
+$grey-5: #BFCCD6;
+$grey-6: #8A9BA8;
+$grey-7: #5C7080;
+$grey-8: #394B59;
+$grey-9: #293742;
+$grey-10: #182026;
+
+$primary-1: #ECF5FA;
+$primary-2: #D2E6F3;
+$primary-3: #AED2E8;
+$primary-4: #80B8DB;
+$primary-5: #4B9BCD;
+$primary-6: #137CBD;
+$primary-7: #1068A4;
+$primary-8: #0E5489;
+$primary-9: #0B3F6F;
+$primary-10: #082A54;
+
+$danger-1: #FCEEEE;
+$danger-2: #F7D7D7;
+$danger-3: #F1B6B6;
+$danger-4: #E98D8D;
+$danger-5: #E15E5E;
+$danger-6: #D72B2B;
+$danger-7: #BE262F;
+$danger-8: #A32030;
+$danger-9: #8A1B2E;
+$danger-10: #70152A;
+
+$metric-unit: 4px;
+$metric-0: 2px;
+$metric-1: $metric-unit;
+$metric-2: $metric-unit*2;
+$metric-3: $metric-unit*3;
+$metric-4: $metric-unit*4;
+$metric-5: $metric-unit*5;
+$metric-6: $metric-unit*6;
+$metric-7: $metric-unit*7;
+//Layout
+
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "mixins",
-        "base"
+        "base",
+        "font",
+        "button"
 ;

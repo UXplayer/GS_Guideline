@@ -3,10 +3,14 @@
 
 {% include head.html %}
 
-<body id="page-top">
-  {% include nav.html %}
-  {% include button.html %}
-  {% include footer.html %}
+<body>
+		<div id="titlebar"></div>
+		<div id="tabbar"></div>
+		<div id="workspace">
+	  	{% include color.html %}
+	  	{% include button.html %}
+		</div>
+		<div id="statusbar"></div>
 </body>
 
 </html>
