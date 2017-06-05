@@ -3,14 +3,14 @@
     background: $grey-2;
     border: 1px solid $grey-4;
     border-radius: 4px;
-    color: $primary-6;
+    color: $grey-8;
     text-align: center;
     font-size: 12px;
     line-height: 28px;
     height: 28px;
     min-width: 68px;
     padding: 0 $metric-3;
-    margin: 0 4px;
+    margin: 0 $metric-1 0 0;
     display: inline-block;
 }
 
@@ -32,7 +32,7 @@
 /* intent-primary 显著按钮的状态样式 */
 .intent-primary {
     background: $primary-6;
-    border: 1px solid $primary-6;
+    border: 1px solid $primary-7;
     color: $grey-1;
 }
 .intent-primary:hover {
@@ -54,24 +54,49 @@
 
 /* intent-danger 危险按钮的状态样式 */
 .intent-danger {
-    background: rgba(230,49,58,1);
-    color:#FFFFFF;
-    border: 1px solid #8E2D31;
+    background: $danger-6;
+    border: 1px solid $danger-6;
+    color: $grey-1;
 }
 .intent-danger:hover {
-    background: rgba(204,40,49,1);
-    color:#FFFFFF;
-    border: 1px solid #8E2D31;
+    background: $danger-5;
+    border: 1px solid $danger-5;
+    color: $grey-1;
 }
 .intent-danger:active {
-    background: rgba(177,36,43,1);
-    color:#FFFFFF;
-    border: 1px solid #691F22;
+    background: $danger-7;
+    border: 1px solid $danger-7;
+    color: $grey-1;
 }
 .intent-danger:disabled {
-    color: #FFFFFF;
-    background-color: rgba(219,55,55,0.5);
-    border: 0; 
+    background: $danger-3;
+    border: 1px solid $danger-3;
+    border: 0;
+    color: $grey-1;
+}
+
+/* intent-link 无框按钮的状态样式 */
+.intent-link {
+    background: transparent;
+    border: 0;
+    color: $primary-6;
+}
+.intent-link:hover {
+    background: transparent;
+    border: 0;
+    color: $primary-5;
+    text-decoration: underline;
+}
+.intent-link:active {
+    background: transparent;
+    border: 0;
+    color: $primary-7;
+    text-decoration: underline;
+}
+.intent-link:disabled {
+    background: transparent;
+    border: 0;
+    color: $grey-6;
 }
 
 
@@ -81,7 +106,7 @@
     line-height: 20px;
     height: 20px;
     min-width: 52px;
-    padding: 0 $metric-1;
+    padding: 0 $metric-2;
 }
 .size-large{
     font-size: 14px;
@@ -91,6 +116,29 @@
     padding: 0 $metric-3;
 }
 
+
+/* Icon按钮类型 */
+.icon-small{
+    min-width: 20px;
+    line-height: 20px;
+    height: 20px;
+    padding: 0 $metric-1;
+    margin: 0 $metric-0 0 0;
+}
+.icon-normal{
+    min-width: 28px;
+    line-height: 28px;
+    height: 28px;
+    padding: 0 $metric-1;
+    margin: 0 $metric-0 0 0;
+}
+.icon-large{
+    min-width: 36px;
+    line-height: 36px;
+    height: 36px;
+    padding: 0 $metric-1;
+    margin: 0 $metric-0 0 0;
+}
 
 /* group 由多个按钮组成 */
 .group-first{
@@ -108,22 +156,46 @@
     border-top-left-radius: 0;
     margin-left: 0;
 }
-/* Icon按钮类型 */
-.icon-small{
-    min-width: 20px;
-    line-height: 20px;
-    height: 20px;
-    padding: 0 $metric-0;
+
+.plain,.plain:hover,.plain:active{
+    background: transparent;
+    border: 0;
+    color: $grey-8;
 }
-.icon-normal{
-    min-width: 28px;
-    line-height: 28px;
-    height: 28px;
-    padding: 0 $metric-0;
+.plain[actived],.plain[actived]:hover,.plain[actived]:active{
+    background: transparent;
+    border: 0;
+    color: $primary-6;
 }
-.icon-large{
-    min-width: 36px;
-    line-height: 36px;
-    height: 36px;
-    padding: 0 $metric-0;
+
+
+.plain:active,.plain[actived]:active{
+    background: $grey-active;
+    border: 0;
 }
+.plain:hover,.plain[actived]:hover{
+    background: $grey-hover;
+    border: 0;
+}
+
+.plain-inverse,.plain-inverse:hover,.plain-inverse:active{
+    background: transparent;
+    border: 0;
+    color: $grey-1;
+}
+.plain-inverse[actived],.plain-inverse[actived]:hover,.plain-inverse[actived]:active{
+    background: transparent;
+    border: 0;
+    color: $primary-5;
+}
+
+.plain-inverse:active,.plain-inverse[actived]:active{
+    background: $grey-inverse-active;
+    border: 0;
+}
+.plain-inverse:hover,.plain-inverse[actived]:hover{
+    background: $grey-inverse-hover;
+    border: 0;
+}
+
+

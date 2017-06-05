@@ -11,4 +11,4 @@ github_username:
 # Build settings
 markdown: kramdown
 
-theme: jekyll-theme-minimal
+theme: 

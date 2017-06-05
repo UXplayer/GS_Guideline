@@ -2,13 +2,23 @@
 	font-size: 24px;
 	color: $grey-10;
 }
+
 .heading-medium{
 	font-size: 18px;
 	color: $grey-10;
 }
+.heading-medium-inverse{
+	font-size: 18px;
+	color: $grey-1;
+}
+
 .heading-small{
 	font-size: 14px;
 	color: $grey-10;
+}
+.heading-small-inverse{
+	font-size: 14px;
+	color: $grey-1;
 }
 
 .body-default{

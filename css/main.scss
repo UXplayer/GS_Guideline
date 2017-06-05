@@ -15,6 +15,10 @@ $grey-7: #5C7080;
 $grey-8: #394B59;
 $grey-9: #293742;
 $grey-10: #182026;
+$grey-hover: rgba(57,75,89,0.18); //gery-8
+$grey-active: rgba(57,75,89,0.38); //gery-8
+$grey-inverse-hover: rgba(225,232,237,0.18); //gery-3
+$grey-inverse-active: rgba(225,232,237,0.38); //gery-3
 
 $primary-1: #ECF5FA;
 $primary-2: #D2E6F3;
@@ -54,6 +58,7 @@ $metric-7: $metric-unit*7;
 @import
         "mixins",
         "base",
+        "background",
         "font",
         "button"
 ;
