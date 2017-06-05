@@ -1,0 +1,64 @@
+---
+---
+
+@charset "utf-8";
+
+// variables.less
+//ColorPalette
+$grey-10: #FFFFFF;
+$grey-9: #F5F8FA;
+$grey-8: #E1E8ED;
+$grey-7: #CED9E0;
+$grey-6: #BFCCD6;
+$grey-5: #8A9BA8;
+$grey-4: #5C7080;
+$grey-3: #394B59;
+$grey-2: #293742;
+$grey-1: #182026;
+$grey-inverse-hover: rgba(57,75,89,0.18); //gery-8
+$grey-inverse-active: rgba(57,75,89,0.38); //gery-8
+$grey-hover: rgba(225,232,237,0.18); //gery-3
+$grey-active: rgba(225,232,237,0.38); //gery-3
+
+$primary-10: #ECF5FA;
+$primary-9: #D2E6F3;
+$primary-8: #AED2E8;
+$primary-7: #80B8DB;
+$primary-6: #4B9BCD;
+$primary-5: #137CBD;
+$primary-4: #1068A4;
+$primary-3: #0E5489;
+$primary-2: #0B3F6F;
+$primary-1: #082A54;
+
+$danger-10: #FCEEEE;
+$danger-9: #F7D7D7;
+$danger-8: #F1B6B6;
+$danger-7: #E98D8D;
+$danger-6: #E15E5E;
+$danger-5: #D72B2B;
+$danger-4: #BE262F;
+$danger-3: #A32030;
+$danger-2: #8A1B2E;
+$danger-1: #70152A;
+
+$metric-unit: 4px;
+$metric-0: 2px;
+$metric-1: $metric-unit;
+$metric-2: $metric-unit*2;
+$metric-3: $metric-unit*3;
+$metric-4: $metric-unit*4;
+$metric-5: $metric-unit*5;
+$metric-6: $metric-unit*6;
+$metric-7: $metric-unit*7;
+//Layout
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "mixins",
+        "base",
+        "background",
+        "font",
+        "button"
+;

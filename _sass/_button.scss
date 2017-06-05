@@ -26,6 +26,7 @@
     background: $grey-4;
     border: 0;  
     color: $grey-6;
+    opacity: 0.8;
 
 }
 
@@ -49,7 +50,8 @@
     background: $primary-3;
     border: 1px solid $primary-3;
     border: 0;
-    color: $grey-1;
+    color: $primary-1;
+    opacity: 0.8;
 }
 
 /* intent-danger 危险按钮的状态样式 */
@@ -72,7 +74,8 @@
     background: $danger-3;
     border: 1px solid $danger-3;
     border: 0;
-    color: $grey-1;
+    color: $danger-1;
+    opacity: 0.8;
 }
 
 /* intent-link 无框按钮的状态样式 */

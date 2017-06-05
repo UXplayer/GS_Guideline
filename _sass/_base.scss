@@ -57,35 +57,24 @@ body {
 /*	height: 100%;
 	width: 100%;*/
 	padding: $metric-1 $metric-1;
-	border: 1px dotted $grey-4;
-	margin: -1px;
+	// border: 1px dotted $grey-4;
+	// margin: -1px;
 }
 .uigroup{
 /*	height: 100%;
 	width: 100%;*/
 	padding: $metric-4 $metric-4;
-	border: 1px solid $grey-6;
-	margin: -1px;
+	// border: 1px solid $grey-6;
+	// margin: -1px;
 }
 .uiapp{
 /*	height: 100%;
 	width: 100%;*/
-	margin: -2px;
 	padding: 0;
-	border: 2px solid $grey-7;
+	margin: -1px;
+	border: 1px solid $grey-6;
 }
-.float-left{
-	float: left;
-}
-.float-right{
-	float: right;
-}
-.border-bottom{
-	border-bottom: 1px solid $grey-4 
-}
-.border-top{
-	border-bottom: 1px solid $grey-4
-}
+
 .row { 
 	display: table;
 	// margin-right: $metric-4 * -1;
@@ -103,8 +92,8 @@ body {
 }
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12{
 	float: left;
-	border: 1px solid $grey-5;
-	margin: -1px;
+	// border: 1px solid $grey-5;
+	// margin: -1px;
 	// padding-top: $metric-2;
 	// padding-bottom: $metric-2;
 }
