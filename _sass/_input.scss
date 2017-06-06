@@ -1,0 +1,46 @@
+/* 输入框基本样式*/
+.QLineEdit{    
+    background-color: $grey-1;
+    border: 1px solid $grey-8-alpha-2;
+    border-radius: 2px;
+    color: $grey-10;
+    text-align: left;
+    font-size: 12px;
+    line-height: 28px;
+    max-height: 24px;
+    min-height: 24px;
+    min-width: 120px;
+    max-width: 120px;
+    padding: 0 $metric-2;
+    margin: 0 $metric-1;
+    display: inline-block;
+}
+
+.QLineEdit:hover{    
+    border: 1px solid $primary-5;
+}
+
+.QLineEdit:active{
+    border-style: inset;    
+    border: 1px solid $primary-6;
+}
+
+.QLineEdit.onfocus{
+    border: 1px solid $primary-6;
+}
+
+.QLineEdit:disabled{ 
+    background-color: $grey-3;
+    color: $grey-8-alpha-4;
+}
+// .input placeholder{
+//     color: $grey-3;
+// }
+// .placeholder{
+//     color: $grey-5;
+// }
+
+input::-webkit-input-placeholder { color: $grey-8-alpha-4; }
+input::-moz-placeholder { color: $grey-8-alpha-4; }
+input:-ms-input-placeholder { color: $grey-8-alpha-4; }
+input:-moz-placeholder { color: $grey-8-alpha-4; }

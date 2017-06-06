@@ -173,11 +173,11 @@
 
 
 .plain:active,.plain[actived]:active{
-    background: $grey-active;
+    background: $grey-8-alpha-4;
     border: 0;
 }
 .plain:hover,.plain[actived]:hover{
-    background: $grey-hover;
+    background: $grey-8-alpha-2;
     border: 0;
 }
 
@@ -193,11 +193,11 @@
 }
 
 .plain-inverse:active,.plain-inverse[actived]:active{
-    background: $grey-inverse-active;
+    background: $grey-3-alpha-4;
     border: 0;
 }
 .plain-inverse:hover,.plain-inverse[actived]:hover{
-    background: $grey-inverse-hover;
+    background: $grey-3-alpha-2;
     border: 0;
 }
 

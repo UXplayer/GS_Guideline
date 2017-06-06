@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+		<div id="titlebar">
+			{% include titlebar.html %}
+		</div>
+		<div id="tabbar">
+
+		</div>
+		<div id="workspace">	    
+			<div class="row">
+	   			<div class="col-12">
+					<div class="uiapp">
+					  	{% include button.html %}
+				  	</div>
+			  	</div>
+		  	</div>   
+			<div class="row">
+	   			<div class="col-12">
+					<div class="uiapp">
+					  	{% include input.html %}
+				  	</div>
+			  	</div>
+		  	</div>     
+		</div>
+		<div id="statusbar"></div>
+</body>
+
+</html>
