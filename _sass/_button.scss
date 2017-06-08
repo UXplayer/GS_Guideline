@@ -160,12 +160,13 @@
     margin-left: 0;
 }
 
-.plain,.plain:hover,.plain:active{
+.plain,{
     background: transparent;
     border: 0;
+    border-radius: 2px;
     color: $grey-8;
 }
-.plain[actived],.plain[actived]:hover,.plain[actived]:active{
+.plain[actived],{
     background: transparent;
     border: 0;
     color: $primary-6;
@@ -181,12 +182,13 @@
     border: 0;
 }
 
-.plain-inverse,.plain-inverse:hover,.plain-inverse:active{
+.plain-inverse,{
     background: transparent;
     border: 0;
-    color: $grey-1;
+    border-radius: 2px;
+    color: $primary-1;
 }
-.plain-inverse[actived],.plain-inverse[actived]:hover,.plain-inverse[actived]:active{
+.plain-inverse[actived]{
     background: transparent;
     border: 0;
     color: $primary-5;
