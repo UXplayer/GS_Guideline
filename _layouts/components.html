@@ -13,21 +13,33 @@
 		<div id="toolbar">
 			{% include toolbar.html %}
 		</div>
-		<div id="workspace">	    
-			<div class="row">
-	   			<div class="col-12">
-					<div class="uiapp">
-					  	{% include button.html %}
+		<div id="workspace">
+			<div id="sidebar-left">
+				<div class="uicell">
+				LeftSideBar
+				</div>
+			</div>
+			<div id="main">	    
+				<div class="row">
+		   			<div class="col-12">
+						<div class="uiapp">
+						  	{% include button.html %}
+					  	</div>
 				  	</div>
-			  	</div>
-		  	</div>   
-			<div class="row">
-	   			<div class="col-12">
-					<div class="uiapp">
-					  	{% include input.html %}
+			  	</div>   
+				<div class="row">
+		   			<div class="col-12">
+						<div class="uiapp">
+						  	{% include input.html %}
+					  	</div>
 				  	</div>
-			  	</div>
-		  	</div>     
+			  	</div>     
+			</div>
+			<div id="sidebar-right">
+				<div class="uicell">
+				RightSideBar
+				</div>
+			</div>
 		</div>
 		<div id="statusbar"></div>
 </body>

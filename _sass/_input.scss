@@ -16,6 +16,10 @@
     display: inline-block;
 }
 
+.QLineEdit[paraState="templatize"]{
+    background-color: $tmpl-1;
+}
+
 .QLineEdit:hover{    
     border: 1px solid $primary-5;
 }
@@ -31,7 +35,8 @@
 
 .QLineEdit:disabled{ 
     background-color: $grey-3;
-    color: $grey-8-alpha-4;
+    color: $grey-7;
+    cursor: not-allowed；
 }
 
 input::-webkit-input-placeholder { color: $grey-8-alpha-4; }

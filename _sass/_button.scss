@@ -33,17 +33,17 @@
 /* intent-primary 显著按钮的状态样式 */
 .intent-primary {
     background: $primary-6;
-    border: 1px solid $primary-7;
+    border: 1px solid $primary-8;
     color: $grey-1;
 }
 .intent-primary:hover {
     background: $primary-5;
-    border: 1px solid $primary-5;
+    border: 1px solid $primary-7;
     color: $grey-1;
 }
 .intent-primary:active {
     background: $primary-7;
-    border: 1px solid $primary-7;
+    border: 1px solid $primary-8;
     color: $grey-1;
 }
 .intent-primary:disabled {
@@ -121,6 +121,7 @@
 
 
 /* Icon按钮类型 */
+
 .icon-small{
     min-width: 20px;
     line-height: 20px;
@@ -141,6 +142,10 @@
     height: 36px;
     padding: 0 $metric-1;
     margin: 0 $metric-0 0 0;
+}
+
+.droparrow{
+    min-width: 10px;
 }
 
 /* group 由多个按钮组成 */
@@ -172,6 +177,10 @@
     color: $primary-6;
 }
 
+.iconactived{
+    background: $primary-1;
+    border: 1px solid $primary-4;
+}
 
 .plain:active,.plain[actived]:active{
     background: $grey-8-alpha-4;

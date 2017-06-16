@@ -6,41 +6,32 @@
 // variables.less
 //ColorPalette
 
-// $grey-1: #FFFFFF;
-// $grey-2: #FAF9F5;
-// $grey-3: #EDEAE1;
-// $grey-4: #E0DBCE;
-// $grey-5: #D6CCBF;
-// $grey-6: #A8978A;
-// $grey-7: #806B5C;
-// $grey-8: #594539;
-// $grey-9: #423029;
-// $grey-10: #261F18;
 $grey-1: #FFFFFF;
-$grey-2: #F5F8FA;
-$grey-3: #E1E8ED;
-$grey-4: #CED9E0;
-$grey-5: #BFCCD6;
-$grey-6: #8A9BA8;
-$grey-7: #5C7080;
-$grey-8: #394B59;
-$grey-9: #293742;
-$grey-10: #182026;
+$grey-2: #FAF9F5;
+$grey-3: #EDEAE1;
+$grey-4: #E0DBCE;
+$grey-5: #D6CCBF;
+$grey-6: #A8978A;
+$grey-7: #806B5C;
+$grey-8: #594539;
+$grey-9: #423029;
+$grey-10: #261F18;
+
 $grey-8-alpha-2: rgba(57,75,89,0.18); // gery-8
 $grey-8-alpha-4: rgba(57,75,89,0.38); // gery-8
 $grey-3-alpha-2: rgba(225,232,237,0.18); // gery-3
 $grey-3-alpha-4: rgba(225,232,237,0.38); // gery-3
 
-// $primary-1: #fef3eb;
-// $primary-2: #fde3cf;
-// $primary-3: #fccca7;
-// $primary-4: #faaf76;
-// $primary-5: #f78e3d;
-// $primary-6: #f56a00;
-// $primary-7: #d75000;
-// $primary-8: #b93600;
-// $primary-9: #991b00;
-// $primary-10: #7a0000;
+$primary-1: #fef3eb;
+$primary-2: #fde3cf;
+$primary-3: #fccca7;
+$primary-4: #faaf76;
+$primary-5: #f78e3d;
+$primary-6: #f56a00;
+$primary-7: #d75000;
+$primary-8: #b93600;
+$primary-9: #991b00;
+$primary-10: #7a0000;
 
 // $primary-1: #F9F4EE;
 // $primary-2: #F0E5D5;
@@ -53,16 +44,16 @@ $grey-3-alpha-4: rgba(225,232,237,0.38); // gery-3
 // $primary-9: #703415;
 // $primary-10: #5A1D11;
 
-$primary-1: #ECF5FA;
-$primary-2: #D2E6F3;
-$primary-3: #AED2E8;
-$primary-4: #80B8DB;
-$primary-5: #4B9BCD;
-$primary-6: #137CBD;
-$primary-7: #1068A4;
-$primary-8: #0E5489;
-$primary-9: #0B3F6F;
-$primary-10: #082A54;
+// $primary-1: #ECF5FA;
+// $primary-2: #D2E6F3;
+// $primary-3: #AED2E8;
+// $primary-4: #80B8DB;
+// $primary-5: #4B9BCD;
+// $primary-6: #137CBD;
+// $primary-7: #1068A4;
+// $primary-8: #0E5489;
+// $primary-9: #0B3F6F;
+// $primary-10: #082A54;
 
 $info-1: #ECF5FA;
 $info-2: #D2E6F3;
@@ -75,6 +66,18 @@ $info-8: #0E5489;
 $info-9: #0B3F6F;
 $info-10: #082A54;
 
+
+$tmpl-1: #F6EFF6;
+$tmpl-2: #EADAEA;
+$tmpl-3: #D9BBD9;
+$tmpl-4: #C394C3;
+$tmpl-5: #AA68AA;
+$tmpl-6: #8F398F;
+$tmpl-7: #7C317B;
+$tmpl-8: #692A66;
+$tmpl-9: #562250;
+$tmpl-10: #421A3B;
+
 $danger-1: #FCEEEE;
 $danger-2: #F7D7D7;
 $danger-3: #F1B6B6;
@@ -85,17 +88,6 @@ $danger-7: #BE262F;
 $danger-8: #A32030;
 $danger-9: #8A1B2E;
 $danger-10: #70152A;
-
-$tmpl-1: #FAEBFA;
-$tmpl-2: #EADAEA;
-$tmpl-3: #D9BBD9;
-$tmpl-4: #C394C3;
-$tmpl-5: #AA68AA;
-$tmpl-6: #8F398F;
-$tmpl-7: #7C317B;
-$tmpl-8: #692A66;
-$tmpl-9: #562250;
-$tmpl-10: #421A3B;
 
 $metric-unit: 4px;
 $metric-0: 2px;
