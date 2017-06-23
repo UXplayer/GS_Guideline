@@ -1,0 +1,248 @@
+StyledCommonButton
+{
+    font-family:'Helvetica Neue',Helvetica,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;
+    color: $grey-8;
+    background: transparent;
+    border: 1px solid $grey-4;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 28px;
+    height: 28px;
+    min-width: 48px;
+    margin: 0 $metric-1;
+    padding: 0 $metric-3;
+    display: inline-block;
+}
+
+/* 普通按钮样式的各状态*/
+StyledCommonButton:hover {
+    background: $grey-1;
+}
+StyledCommonButton:pressed {
+    background: $grey-3;
+}
+StyledCommonButton:active {
+    background: $grey-3;
+}
+StyledCommonButton[disabled],
+StyledCommonButton:disabled {
+    background: $grey-4;
+    color: $grey-6;
+    opacity: 0.8;
+}
+
+/* intent-primary 强调按钮的状态样式 */
+StyledCommonButton[intent="IntentPrimary"]{
+    background: $primary-6;
+    border: 1px solid $primary-8;
+    color: $grey-1;
+}
+StyledCommonButton[intent="IntentPrimary"]:hover {
+    background: $primary-5;
+    border: 1px solid $primary-7;
+    color: $grey-1;
+}
+StyledCommonButton[intent="IntentPrimary"]:pressed {
+    background: $primary-8;
+    border: 1px solid $primary-10;
+    color: $grey-1;
+}
+StyledCommonButton[intent="IntentPrimary"]:active {
+    background: $primary-8;
+    border: 1px solid $primary-10;
+    color: $grey-1;
+}
+StyledCommonButton[intent="IntentPrimary"][disabled], 
+StyledCommonButton[intent="IntentPrimary"]:disabled {
+    background: $primary-3;
+    border: 1px solid $primary-3;
+    color: $primary-1;
+    opacity: 0.8;
+}
+
+/* intent-danger 危险按钮的状态样式 */
+StyledCommonButton[intent="IntentDanger"]{
+    background: $danger-6;
+    border: 1px solid $danger-6;
+    color: $grey-1;
+}
+StyledCommonButton[intent="IntentDanger"]:hover {
+    background: $danger-5;
+    border: 1px solid $danger-5;
+    color: $grey-1;
+}
+StyledCommonButton[intent="IntentDanger"]:pressed {
+    background: $danger-8;
+    border: 1px solid $danger-7;
+    color: $grey-1;
+}
+StyledCommonButton[intent="IntentDanger"]:active {
+    background: $danger-8;
+    border: 1px solid $danger-7;
+    color: $grey-1;
+}
+StyledCommonButton[intent="IntentDanger"][disabled], 
+StyledCommonButton[intent="IntentDanger"]:disabled {
+    background: $danger-3;
+    border: 1px solid $danger-3;
+    color: $danger-1;
+    opacity: 0.8;
+}
+
+/* intent-link 链接按钮 */
+StyledCommonButton[intent="IntentLink"]{
+    background: transparent;
+    border: 0;
+    color: $primary-6;
+    text-decoration: none;
+}
+StyledCommonButton[intent="IntentLink"]:hover{
+    color: $primary-5;
+    text-decoration: underline;
+}
+StyledCommonButton[intent="IntentLink"]:pressed{
+    color: $primary-8;
+    text-decoration: underline;
+}
+StyledCommonButton[intent="IntentLink"]:active{
+    color: $primary-8;
+    text-decoration: underline;
+}
+StyledCommonButton[intent="IntentLink"][disabled], 
+StyledCommonButton[intent="IntentLink"]:disabled{
+    color: $grey-6;
+    text-decoration: none;
+}
+
+/* intent-plain 无框按钮 */
+StyledCommonButton[intent="IntentPlain"]{
+    background: transparent;
+    border: 0;
+    border-radius: 2px;
+    color: $grey-8;
+}
+StyledCommonButton[intent="IntentPlain"]:hover{
+    background: transparent;
+    color: $primary-6;
+}
+StyledCommonButton[intent="IntentPlain"]:pressed{
+    background: $grey-8-alpha-4;
+}
+StyledCommonButton[intent="IntentPlain"]:active{
+    background: $grey-8-alpha-4;
+}
+StyledCommonButton[intent="IntentPlain"][disabled], 
+StyledCommonButton[intent="IntentPlain"]:disabled{
+    background: $grey-8-alpha-2;
+}
+
+/* intent-plain-iverse 无框反色按钮 */
+StyledCommonButton[intent="IntentPlainInverse"]{
+    background: transparent;
+    border: 0;
+    border-radius: 2px;
+    color: $primary-1;
+}
+StyledCommonButton[intent="IntentPlainInverse"]:hover{
+    background: transparent;
+    color: $primary-5;
+}
+StyledCommonButton[intent="IntentPlainInverse"]:pressed{
+    background: $grey-3-alpha-4;
+}
+StyledCommonButton[intent="IntentPlainInverse"]:active{
+    background: $grey-3-alpha-4;
+}
+StyledCommonButton[intent="IntentPlainInverse"][disabled], 
+StyledCommonButton[intent="IntentPlainInverse"]:disabled{
+    background: $grey-3-alpha-2;
+}
+
+
+/* size 各尺寸 */
+StyledCommonButton[btnSize="SizeSmall"]{
+    font-size: 12px;
+    line-height: 20px;
+    min-height: 20px;
+    height: 20px;
+    min-width: 36px;
+    padding: 0 $metric-2;
+}
+StyledCommonButton[btnSize="SizeNormal"]{
+    font-size: 12px;
+    line-height: 28px;
+    min-height: 28px;
+    height: 28px;
+    min-width: 48px;
+    padding: 0 $metric-3;
+}
+StyledCommonButton[btnSize="SizeLarge"]{
+    font-size: 14px;
+    line-height: 36px;
+    min-height: 36px;
+    height: 36px;
+    min-width: 56px;
+    padding: 0 $metric-3;
+}
+StyledCommonButton[btnSize="SizeIconSmall"]{
+    min-width: 16px;
+    max-width: 16px;
+    line-height: 20px;
+    height: 20px;
+    padding: 0 $metric-1;
+}
+StyledCommonButton[btnSize="SizeIconNormal"]{
+    min-width: 24px;
+    max-width: 24px;
+    line-height: 28px;
+    height: 28px;
+    padding: 0 $metric-1;
+}
+StyledCommonButton[btnSize="SizeIconLarge"]{
+    min-width: 32px;
+    max-width: 32px;
+    line-height: 36px;
+    height: 36px;
+    padding: 0 $metric-1;
+}
+
+StyledCommonButton[btnSize="SizeDropSmall"]{
+    min-width: 6px;
+    max-width: 6px;
+    line-height: 20px;
+    height: 20px;
+    padding: 0 $metric-0;
+}
+StyledCommonButton[btnSize="SizeDropNormal"]{
+    min-width: 10px;
+    max-width: 10px;
+    line-height: 28px;
+    height: 28px;
+    padding: 0 $metric-0;
+}
+StyledCommonButton[btnSize="SizeDropLarge"]{
+    min-width: 14px;
+    max-width: 14px;
+    line-height: 36px;
+    height: 36px;
+    padding: 0 $metric-0;
+}
+
+/* 按钮组 */
+StyledCommonButton[group="GroupFirst"]{
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    margin-right: -1px;
+}
+StyledCommonButton[group="GroupMiddle"]{
+    border-radius: 0;
+    margin-left: 0;
+    margin-right: -1px;
+}
+StyledCommonButton[group="GroupLast"]{
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    margin-left: 0;
+}
+

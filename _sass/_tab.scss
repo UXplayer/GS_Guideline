@@ -1,34 +1,23 @@
 .tab { 
 	background: $grey-5;
 	border: 1px solid $grey-6; 
-	align-content: left;
-	text-align: left;
 	color: $grey-10;
     font-size: 12px;
     line-height: 24px;
     height: 24px;
     max-width: 200px;
     padding: 0 $metric-2;
-	margin-left: 0px; 
-	margin-right: -4px; 
-	margin-bottom: -2px; 
+	margin-right: -1px; 
 	border-bottom: none;
 } 
 .tab:hover{
 	background: $grey-4;
 }
 
-.tab:active{
-	background: $grey-4;
-}
 .tab.selected{ 
 	background: $grey-3;
-/*	border-top: 1px solid $grey-6; 
-	border-left: 1px solid $grey-6; 
-	border-right: 1px solid $grey-6; */
 	border-bottom: none;
-	margin-right: -4px; 
-	margin-bottom: -2px; 
+	margin-right: -1px; 
 }
 
 .tab-close{ 

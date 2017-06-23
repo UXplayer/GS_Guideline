@@ -15,15 +15,13 @@
 		</div>
 		<div id="workspace">
 			<div id="sidebar-left">
-				<div class="uicell">
-				LeftSideBar
-				</div>
+				{% include sidebarlist.html %}
 			</div>
 			<div id="main">	    
 				<div class="row">
 		   			<div class="col-12">
 						<div class="uiapp">
-						  	{% include button.html %}
+						  	{% include QPushButton.html %}
 					  	</div>
 				  	</div>
 			  	</div>   
@@ -36,12 +34,11 @@
 			  	</div>     
 			</div>
 			<div id="sidebar-right">
-				<div class="uicell">
-				RightSideBar
-				</div>
+				{% include sidebarlist.html %}
 			</div>
 		</div>
 		<div id="statusbar"></div>
+{% include scripts.html %}
 </body>
 
 </html>

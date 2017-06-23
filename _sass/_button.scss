@@ -1,7 +1,7 @@
 /* 按钮的基本样式*/
 .button{    
     background: $grey-2;
-    border: 1px solid $grey-4;
+    border: 1px solid $grey-5;
     border-radius: 4px;
     color: $grey-8;
     text-align: center;
@@ -137,10 +137,11 @@
     margin: 0 $metric-0 0 0;
 }
 .icon-large{
+    font-size: 14px;
     min-width: 36px;
     line-height: 36px;
     height: 36px;
-    padding: 0 $metric-1;
+    padding: 0 $metric-2;
     margin: 0 $metric-0 0 0;
 }
 
@@ -173,22 +174,18 @@
 }
 .plain[actived],{
     background: transparent;
-    border: 0;
+    // border: 0;
     color: $primary-6;
 }
 
-.iconactived{
-    background: $primary-1;
-    border: 1px solid $primary-4;
-}
 
 .plain:active,.plain[actived]:active{
     background: $grey-8-alpha-4;
-    border: 0;
+    // border: 0;
 }
 .plain:hover,.plain[actived]:hover{
     background: $grey-8-alpha-2;
-    border: 0;
+    // border: 0;
 }
 
 .plain-inverse,{
@@ -199,17 +196,21 @@
 }
 .plain-inverse[actived]{
     background: transparent;
-    border: 0;
+    // border: 0;
     color: $primary-5;
 }
 
 .plain-inverse:active,.plain-inverse[actived]:active{
     background: $grey-3-alpha-4;
-    border: 0;
+    // border: 0;
 }
 .plain-inverse:hover,.plain-inverse[actived]:hover{
     background: $grey-3-alpha-2;
-    border: 0;
+    // border: 0;
 }
 
+.iconactived{
+    // background: $primary-1;
+    border: 1px solid $primary-4;
+}
 
