@@ -35,7 +35,7 @@ StyledCommonButton:disabled {
 /* intent-primary 强调按钮的状态样式 */
 StyledCommonButton[intent="IntentPrimary"]{
     background: $primary-6;
-    border: 1px solid $primary-8;
+    border: 1px solid $primary-9;
     color: $grey-1;
 }
 StyledCommonButton[intent="IntentPrimary"]:hover {
@@ -233,12 +233,12 @@ StyledCommonButton[btnSize="SizeDropLarge"]{
 StyledCommonButton[group="GroupFirst"]{
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
-    margin-right: -1px;
+    margin-right: -4px;
 }
 StyledCommonButton[group="GroupMiddle"]{
     border-radius: 0;
     margin-left: 0;
-    margin-right: -1px;
+    margin-right: -5px;
 }
 StyledCommonButton[group="GroupLast"]{
     border-bottom-left-radius: 0;

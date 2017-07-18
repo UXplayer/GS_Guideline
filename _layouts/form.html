@@ -4,7 +4,6 @@
 {% include head.html %}
 
 <body>
-
 		<div id="titlebar">
 			{% include titlebar.html %}
 		</div>
@@ -18,26 +17,20 @@
 			<div id="sidebar-left">
 				{% include sidebarlist.html %}
 			</div>
-			<div id="main">
+			<div id="main">	  
 				<div class="row">
 		   			<div class="col-12">
 						<div class="uiapp">
-						  	{% include button.html %}
+						  	{% include QLineEdit.html %}
+					  	</div>
+				  	</div>
+			  	</div>        
+				<div class="row">
+		   			<div class="col-12">
+						<div class="uiapp">
 					  	</div>
 				  	</div>
 			  	</div>    
-				<div class="row">
-		   			<div class="col-6">
-						<div class="uiapp">
-						  	{% include button.html %}
-					  	</div>
-				  	</div>
-		   			<div class="col-6">
-						<div class="uiapp">
-						  	{% include button.html %}
-					  	</div>
-				  	</div>
-			  	</div>   
 			</div>
 			<div id="sidebar-right">
 				{% include sidebarlist.html %}

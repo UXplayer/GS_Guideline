@@ -1,0 +1,28 @@
+QProgressBar {
+    background-color: $grey-4;
+    border-radius: 4px;
+    border: 0;
+    height: 8px;
+    text-align: center;
+}
+
+QProgressBar::chunk {
+    background-color: $primary-5;
+    border-radius: 4px;
+    border: 0;
+    height: 8px;
+}
+
+QProgressBar::chunk [func="primary"]{
+    background-color: $primary-5;
+}
+
+QProgressBar::chunk [func="error"]{
+    background-color: $danger-5;
+}
+QProgressBar::chunk [func="warning"]{
+    background-color: $warning-5;
+}
+QProgressBar::chunk [func="success"]{
+    background-color: $success-5;
+}

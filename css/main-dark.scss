@@ -64,6 +64,28 @@ $tmpl-8: #692A66;
 $tmpl-9: #562250;
 $tmpl-10: #421A3B;
 
+$success-1: #ECF7F2;
+$success-2: #D2ECE1;
+$success-3: #ADDCC8;
+$success-4: #7EC8A9;
+$success-5: #48B186;
+$success-6: #0F9960;
+$success-7: #0D8556;
+$success-8: #0B704B;
+$success-9: #095B41;
+$success-10: #074636;
+      
+$warning-1: #FCF5EE;
+$warning-2: #F8E7D7;
+$warning-3: #F2D4B6;
+$warning-4: #EBBC8D;
+$warning-5: #E2A05E;
+$warning-6: #D7812B;
+$warning-7: #C06925;
+$warning-8: #A64F20;
+$warning-9: #8C3B1A;
+$warning-10: #702614;
+
 $danger-10: #FCEEEE;
 $danger-9: #F7D7D7;
 $danger-8: #F1B6B6;
@@ -97,5 +119,6 @@ $metric-7: $metric-unit*7;
         "button",
         "tab",
         "input",
-      	"qpushbutton" 
+      	"qpushbutton",
+      	"qprogressbar" 
 ;
