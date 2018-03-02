@@ -5,25 +5,37 @@ body {
     height: 100%;
     margin: 0;
     display: block;
-    color: $grey-10;
+    color: $neutral-10;
     font-size: 12px;
 }
-pre{
+pre,textarea{
 	margin: 0;
-	padding: 0 $metric-3;
+	padding: 0 $size-3;
 	border-radius: 4px;
-	background: $grey-1;
-	border: 1px solid $grey-5;
-	height: 120px; 
-	overflow: auto; 
+	background: $neutral-1;
+	border: 1px solid $neutral-5;
+	height: 60px; 
+	overflow: auto;
+	-webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    transition: all 0.1s; 
+    text-align: left;        
+
+}
+pre:hover,textarea:hover{
+	height: 300px; 
+	-webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;   
+
 }
 .attribute-name{
 	margin: 0;
-	padding: 0 $metric-1;
-	margin: 0 $metric-1;
+	padding: 0 $size-1;
+	margin: 0 $size-1;
 	border-radius: 2px;
-	background: $grey-1;
-	border: 1px solid $grey-5;
+	background: $neutral-1;
+	border: 1px solid $neutral-5;
 }
 ul{
 	margin: 0;

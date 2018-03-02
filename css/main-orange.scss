@@ -6,21 +6,21 @@
 // variables.less
 //ColorPalette
 
-$grey-1: #FFFFFF;
-$grey-2: #FAF9F5;
-$grey-3: #EDEAE1;
-$grey-4: #E0DBCE;
-$grey-5: #D6CCBF;
-$grey-6: #A8978A;
-$grey-7: #806B5C;
-$grey-8: #594539;
-$grey-9: #423029;
-$grey-10: #261F18;
+$neutral-1: #FFFFFF;
+$neutral-2: #FAF9F5;
+$neutral-3: #EDEAE1;
+$neutral-4: #E0DBCE;
+$neutral-5: #D6CCBF;
+$neutral-6: #A8978A;
+$neutral-7: #806B5C;
+$neutral-8: #594539;
+$neutral-9: #423029;
+$neutral-10: #261F18;
 
-$grey-8-alpha-2: rgba(57,75,89,0.18); // gery-8
-$grey-8-alpha-4: rgba(57,75,89,0.38); // gery-8
-$grey-3-alpha-2: rgba(225,232,237,0.18); // gery-3
-$grey-3-alpha-4: rgba(225,232,237,0.38); // gery-3
+$neutral-8-alpha-2: rgba(57,75,89,0.18); // gery-8
+$neutral-8-alpha-4: rgba(57,75,89,0.38); // gery-8
+$neutral-3-alpha-2: rgba(225,232,237,0.18); // gery-3
+$neutral-3-alpha-4: rgba(225,232,237,0.38); // gery-3
 
 $primary-1: #fef3eb;
 $primary-2: #fde3cf;
@@ -111,18 +111,19 @@ $danger-8: #A32030;
 $danger-9: #8A1B2E;
 $danger-10: #70152A;
 
-$metric-unit: 4px;
-$metric-0: 2px;
-$metric-1: $metric-unit; // 4px
-$metric-2: $metric-unit*2; // 8px
-$metric-3: $metric-unit*3; // 12px
-$metric-4: $metric-unit*4; // 16px
-$metric-5: $metric-unit*5; // 20px
-$metric-6: $metric-unit*6; // 24px
-$metric-7: $metric-unit*7; // 28px
+$size-unit: 4px;
+$size-0: 2px;
+$size-1: $size-unit; // 4px
+$size-2: $size-unit*2; // 8px
+$size-3: $size-unit*3; // 12px
+$size-4: $size-unit*4; // 16px
+$size-5: $size-unit*5; // 20px
+$size-6: $size-unit*6; // 24px
+$size-7: $size-unit*7; // 28px
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
+/*
 @import
         "mixins",
         "base",
@@ -135,3 +136,4 @@ $metric-7: $metric-unit*7; // 28px
       	"qpushbutton",
       	"qprogressbar"
 ;
+*/

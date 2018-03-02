@@ -3,55 +3,21 @@
 
 @charset "utf-8";
 
-// variables.less
-//ColorPalette
+// Color
 
-// $grey-1: #FFFFFF;
-// $grey-2: #FAF9F5;
-// $grey-3: #EDEAE1;
-// $grey-4: #E0DBCE;
-// $grey-5: #D6CCBF;
-// $grey-6: #A8978A;
-// $grey-7: #806B5C;
-// $grey-8: #594539;
-// $grey-9: #423029;
-// $grey-10: #261F18;
-$grey-1: #FFFFFF;
-$grey-2: #F5F8FA;
-$grey-3: #E1E8ED;
-$grey-4: #CED9E0;
-$grey-5: #BFCCD6;
-$grey-6: #8A9BA8;
-$grey-7: #5C7080;
-$grey-8: #394B59;
-$grey-9: #293742;
-$grey-10: #182026;
-$grey-8-alpha-2: rgba(57,75,89,0.18); // gery-8
-$grey-8-alpha-4: rgba(57,75,89,0.38); // gery-8
-$grey-3-alpha-2: rgba(225,232,237,0.18); // gery-3
-$grey-3-alpha-4: rgba(225,232,237,0.38); // gery-3
+$white: #FFF;
+$black: #000;
 
-// $primary-1: #fef3eb;
-// $primary-2: #fde3cf;
-// $primary-3: #fccca7;
-// $primary-4: #faaf76;
-// $primary-5: #f78e3d;
-// $primary-6: #f56a00;
-// $primary-7: #d75000;
-// $primary-8: #b93600;
-// $primary-9: #991b00;
-// $primary-10: #7a0000;
-
-// $primary-1: #F9F4EE;
-// $primary-2: #F0E5D5;
-// $primary-3: #E4D0B3;
-// $primary-4: #D4B587;
-// $primary-5: #C39756;
-// $primary-6: #B07621;
-// $primary-7: #9B601D;
-// $primary-8: #864A19;
-// $primary-9: #703415;
-// $primary-10: #5A1D11;
+$neutral-1: #F5F8FA;
+$neutral-2: #EBF1F5;
+$neutral-3: #E1E8ED;
+$neutral-4: #CED9E0;
+$neutral-5: #BFCCD6;
+$neutral-6: #8A9BA8;
+$neutral-7: #5C7080;
+$neutral-8: #394B59;
+$neutral-9: #293742;
+$neutral-10: #182026;
 
 $primary-1: #ECF5FA;
 $primary-2: #D2E6F3;
@@ -119,15 +85,85 @@ $tmpl-8: #692A66;
 $tmpl-9: #562250;
 $tmpl-10: #421A3B;
 
-$metric-unit: 4px;
-$metric-0: 2px;
-$metric-1: $metric-unit; // 4px
-$metric-2: $metric-unit*2; // 8px
-$metric-3: $metric-unit*3; // 12px
-$metric-4: $metric-unit*4; // 16px
-$metric-5: $metric-unit*5; // 20px
-$metric-6: $metric-unit*6; // 24px
-$metric-7: $metric-unit*7; // 28px
+
+// Size
+
+$size-unit: 4px;
+$size-0: $size-unit * 0.5; // 2px
+$size-1: $size-unit * 1; // 4px
+$size-2: $size-unit * 2; // 8px
+$size-3: $size-unit * 3; // 12px
+$size-4: $size-unit * 4; // 16px
+$size-5: $size-unit * 5; // 20px
+$size-6: $size-unit * 6; // 24px
+$size-7: $size-unit * 7; // 28px
+$size-8: $size-unit * 8; // 32px
+$size-9: $size-unit * 9; // 36px
+
+$spacing-0: $size-0; // 最小间距，即使是两个紧挨着的控件之间也有一定的间距，而不是 0 间距（除了 Tab、GroupButton 之类互相重叠、间距为负的除外）
+$spacing-s: $size-1; // 较小间距
+$spacing-m: $size-2; // 标准间距
+$spacing-l: $size-3; // 较大间距
+
+
+// Border
+
+$border-width-thin: 1px;
+$border-width-medium: 2px;
+$border-width-thick: 4px;
+
+$border-radius-0: 0px;
+$border-radius-s: 2px;
+$border-radius-m: 4px;
+$border-radius-l: 8px;
+$border-radius-max: 999px; // QSS 不支持该设置，效果是最大圆角，即 min(height,width)/2
+
+
+// Icon
+
+$icon-size-s: 12px;
+$icon-size-m: 14px;
+$icon-size-l: 18px;
+
+// Text
+
+$font-size-s: 10px;
+$font-size-m: 12px;
+$font-size-l: 14px;
+$font-size-heading-s: 18px;
+$font-size-heading-m: 24px;
+$font-size-heading-l: 32px;
+
+$color-text-label-dark: $neutral-10;
+$color-text-label-normal: $neutral-8;
+$color-text-label-light: $neutral-7;
+$color-text-label-faint: $neutral-5;
+
+$color-text-label-info: $primary-6;
+$color-text-label-success: $success-6;
+$color-text-label-warning: $warning-6;
+$color-text-label-danger: $danger-6;
+
+//背景遮罩层
+
+$color-background-mask-hover: rgba( $neutral-8, .18 ); 
+$color-background-mask-pressed: rgba( $neutral-8, .38 ); 
+$color-background-mask-disabled: rgba( $neutral-8, .08 ); 
+$color-background-mask-modal: rgba( $neutral-8, .5 ); 
+
+$color-background-mask-inverse-hover: rgba( $neutral-3, .18 ); 
+$color-background-mask-inverse-pressed: rgba( $neutral-3, .38 ); 
+$color-background-mask-inverse-modal: rgba( $neutral-3, .5 ); 
+
+$neutral-8-alpha-2: rgba( $neutral-8, .18 ); 
+$neutral-8-alpha-4: rgba( $neutral-8, .38 ); 
+$neutral-3-alpha-2: rgba( $neutral-3, .18 ); 
+$neutral-3-alpha-4: rgba( $neutral-3, .38 ); 
+
+
+
+
+
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)

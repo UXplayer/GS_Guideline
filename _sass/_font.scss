@@ -1,39 +1,118 @@
 .heading-huge{
 	font-size: 32px;
-	color: $grey-10;
+	color: $neutral-10;
 }
 .heading-large{
 	font-size: 24px;
-	color: $grey-10;
+	color: $neutral-10;
 }
 
 .heading-medium{
 	font-size: 18px;
-	color: $grey-10;
+	color: $neutral-10;
 }
 .heading-medium-inverse{
 	font-size: 18px;
-	color: $grey-1;
+	color: $neutral-1;
 }
 
 .heading-small{
 	font-size: 14px;
-	color: $grey-10;
+	color: $neutral-10;
 }
 .heading-small-inverse{
 	font-size: 14px;
-	color: $grey-1;
+	color: $neutral-1;
 }
 
 .body-default{
 	font-size: 12px;
-	color: $grey-10;
+	color: $neutral-10;
 }
 .body-faint{
 	font-size: 12px;
-	color: $grey-7;
+	color: $neutral-7;
 }
-.input-name{
-	font-size: 13px;
-	color: $grey-10;
+.input-name{    
+	$font-size: $font-size-m;
+	text-align: right;
+	font-size: $font-size;
+	color: $neutral-7;
+}
+
+
+QLabel{
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,"Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
+	font-size: 12px;
+	line-height: 12px;
+	color: $neutral-10;
+	vertical-align: middle;
+}
+
+QLabel[textSize="HeadingLarge"]{
+	font-size: 32px;
+	line-height: 32px;
+}
+
+QLabel[textSize="HeadingMedium"]{
+	font-size: 24px;
+	line-height: 24px;
+}
+
+QLabel[textSize="HeadingSmall"]{
+	font-size: 18px;
+	line-height: 18px;
+}
+
+QLabel[textSize="Title"]{
+	font-size: 14px;
+	line-height: 14px;
+}
+
+QLabel[textSize="Body"]{
+	font-size: 12px;
+	line-height: 12px;
+	color: $neutral-8;	
+}
+
+QLabel[textSize="Caption"]{
+	font-size: 10px;
+	line-height: 10px;
+	color: $neutral-6;	
+}
+
+
+QLabel[textColor="Dark"]{
+	color: $neutral-10;	
+}
+QLabel[textColor="Gentle"]{
+	color: $neutral-8;	
+}
+QLabel[textColor="Light"]{
+	color: $neutral-7;	
+}
+QLabel[textColor="Faint"]{
+	color: $neutral-6;	
+}
+QLabel[textColor="Info"]{
+	color: $primary-6;	
+}
+QLabel[textColor="Success"]{
+	color: $success-6;	
+}
+QLabel[textColor="Warning"]{
+	color: $warning-6;	
+}
+QLabel[textColor="Danger"]{
+	color: $danger-6;	
+}
+
+QLabel[textAlign="Left"]{
+	text-align: left;
+}
+QLabel[textAlign="Center"]{
+	text-align: center;
+}
+QLabel[textAlign="Right"]{
+	text-align: right;
 }

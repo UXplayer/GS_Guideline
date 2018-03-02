@@ -10,60 +10,103 @@
 
 
 	    <div class="row">
-	    	<!-- intent -->
-	   		<div class="col-8">
-	   			<div class="row">
-					<div class="col-3">
-			   			<div class="uicell float-left">
-			   				<label class="input-name">Normal</label>
-					        <input class="QLineEdit" value="InputText">
-				        </div>
-			        </div>
-	   				<div class="col-3">
-			   			<div class="uicell float-left">
-			   				<label class="input-name">OnFocus</label>
-					        <input class="QLineEdit onfocus" value="InputText">
-				        </div>
-		       		</div>
-					<div class="col-3">
-			   			<div class="uicell float-left">
-			   				<label class="input-name">Placeholder</label>
-					        <input class="QLineEdit" placeholder="placeholder">
-				        </div>
-			        </div>
-	   				<div class="col-3">
-			   			<div class="uicell float-left">
-			   				<label class="input-name">Locked</label>
-					        <input class="QLineEdit" value="InputText" disabled>
-				        </div>
-		       		</div>
-		        </div>
-	   			<div class="row">
-					<div class="col-3">
-			   			<div class="uicell float-left">
-			   				<label class="input-name">Template</label>
-					        <input class="QLineEdit" paraState="templatize" value="InputText">
-				        </div>
-			        </div>
-	   				<div class="col-3">
-			   			<div class="uicell float-left">
-			   				<label class="input-name">OnFocus</label>
-					        <input class="QLineEdit onfocus" paraState="templatize" value="InputText">
-				        </div>
-		       		</div>
-					<div class="col-3">
-			   			<div class="uicell float-left">
-			   				<label class="input-name">Placeholder</label>
-					        <input class="QLineEdit" paraState="templatize" placeholder="placeholder">
-				        </div>
-			        </div>
-		        </div>
-		    </div>
+	  	<!-- ParameterType -->
 	   		<div class="col-4">
 	   			<div class="row">
-
+	   				<div class="col-12">
+			   			<div class="uicell float-left">
+					        <label class="heading-medium">Type</label>	
+				        </div>
+			        </div>
+		        </div>
+	   			<div class="row">
+					<div class="col-12">
+			   			<div class="uicell float-left">
+					        <div class="inputvalue"><input class="QLineEdit" value="String"></div>
+				        </div>
+			        </div>
+	   				<div class="col-12">
+			   			<div class="uicell float-left">
+					        <div class="inputvalue"><input class="QLineEdit nodeinput onfocus" value="Node"></div>
+				        </div>
+		       		</div>
+		        </div>
+		    </div>
+	    	<!-- State -->
+	   		<div class="col-4">
+	   			<div class="row">
+	   				<div class="col-12">
+			   			<div class="uicell float-left">
+					        <label class="heading-medium">State</label>	
+				        </div>
+			        </div>
+		        </div>
+	   			<div class="row">
+					<div class="col-12">
+			   			<div class="uicell float-left">
+					        <div class="inputvalue"><input class="QLineEdit" value="Normal"></div>
+				        </div>
+			        </div>
+	   				<div class="col-12">
+			   			<div class="uicell float-left">
+					        <div class="inputvalue"><input class="QLineEdit onfocus" value="Focus"></div>
+				        </div>
+		       		</div>
+					<div class="col-12">
+			   			<div class="uicell float-left">
+					        <div class="inputvalue"><input class="QLineEdit" placeholder="Placeholder"></div>
+				        </div>
+			        </div>
+	   				<div class="col-12">
+			   			<div class="uicell float-left">
+					        <div class="inputvalue"><input class="QLineEdit" value="Disabled" disabled></div>
+				        </div>
+		       		</div>
+	   				<div class="col-12">
+			   			<div class="uicell float-left">
+					        <div class="inputvalue"><input class="QLineEdit error" value="Error"></div>
+				        </div>			   				
+		       		</div>
+		        </div>
+		    </div>
+	    	<!-- Size -->
+	   		<div class="col-4">
+	   			<div class="row">
+	   				<div class="col-12">
+			   			<div class="uicell float-left">
+					        <label class="heading-medium">Size</label>	
+				        </div>
+			        </div>
+		        </div>
+	   			<div class="row">
+	   				<div class="col-12">
+			   			<div class="uicell float-left">
+	   						<div class="row">
+					        	<div class="inputvalue"><input class="QLineEdit" value="InputText"></div>
+				        	</div>
+				        </div>
+		       		</div>
+		        </div>
+	   			<div class="row">
+	   				<div class="col-12">
+			   			<div class="uicell">
+			   				<div class="inputvalue fill"><input class="QLineEdit size-fill" placeholder="placeholder"></div>
+				        </div>
+		       		</div>
 		        </div>
 		    </div>
 	    </div>
+
+
+		<div class="row">  
+	    	<!-- Code -->	    	
+	   		<div class="col-12 loat-left">
+	   			<div class="uicell">
+					<pre>
+						<code>{% include input_code.css %}</code>
+					</pre>
+		        </div>
+		    </div>
+    	</div>
     </div>
 </section>

@@ -1,5 +1,5 @@
 .bg-inverse{
-	background: $grey-10;
+	background: $neutral-10;
 }
 .float-left{
 	float: left;
@@ -8,24 +8,24 @@
 	float: right;
 }
 .border-bottom{
-	border-bottom: 1px solid $grey-4 
+	border-bottom: 1px solid $neutral-4 
 }
 .border-top{
-	border-top: 1px solid $grey-4
+	border-top: 1px solid $neutral-4
 }
 .space-w-1,
 .space-w-2,
 .space-w-3,
 .space-w-4{display: inline-block;}
 
-.space-w-1{	width: $metric-1}
-.space-w-2{	width: $metric-2}
-.space-w-3{	width: $metric-3}
-.space-w-4{	width: $metric-4}
+.space-w-1{	width: $size-1}
+.space-w-2{	width: $size-2}
+.space-w-3{	width: $size-3}
+.space-w-4{	width: $size-4}
 
 
-.space-h-1{	height: $metric-1}
-.space-h-2{	height: $metric-2}
-.space-h-3{	height: $metric-3}
-.space-h-4{	height: $metric-4}
+.space-h-1{	height: $size-1}
+.space-h-2{	height: $size-2}
+.space-h-3{	height: $size-3}
+.space-h-4{	height: $size-4}
 
