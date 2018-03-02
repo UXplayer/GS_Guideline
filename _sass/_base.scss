@@ -7,6 +7,7 @@ body {
     display: block;
     color: $neutral-9;
     font-size: 12px;
+	background: $neutral-1;
 }
 pre,textarea{
 	margin: 0;
@@ -14,7 +15,7 @@ pre,textarea{
 	border-radius: 4px;
 	background: $neutral-1;
 	border: 1px solid $neutral-5;
-	height: 60px; 
+	height: 160px; 
 	overflow: auto;
 	-webkit-transition: all 0.1s;
     -moz-transition: all 0.1s;
@@ -22,13 +23,13 @@ pre,textarea{
     text-align: left;        
 
 }
-pre:hover,textarea:hover{
-	height: 300px; 
-	-webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    transition: all 0.2s;   
+// pre:hover,textarea:hover{
+// 	height: 300px; 
+// 	-webkit-transition: all 0.2s;
+//     -moz-transition: all 0.2s;
+//     transition: all 0.2s;   
 
-}
+// }
 .attribute-name{
 	margin: 0;
 	padding: 0 $size-1;

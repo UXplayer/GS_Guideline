@@ -22,14 +22,15 @@
 }
 
 /* 普通按钮的各个状态*/
-.button:hover {
+.button:hover, .button[onhover] {
     background-color: $white;
 }
 
-.button:active {
-    background-color: $neutral-3;
+.button:active, .button[onactive] {
+    background-color: $neutral-2;
+    background-image: none;
 }
-.button:disabled {    
+.button:disabled{    
     color: $neutral-7;
     background-color: $neutral-4;
     background-image: none;
@@ -53,7 +54,7 @@
 }
 .intent-primary:active, .intent-primary[onactive] {
     background-color: $primary-7;
-    border: $border-width-thin solid $primary-8;
+    border: $border-width-thin solid $primary-9;
     color: $neutral-1;
 }
 .intent-primary:disabled {
@@ -70,14 +71,14 @@
     border: $border-width-thin solid $danger-8;
     color: $neutral-1;
 }
-.intent-danger:hover {
+.intent-danger:hover, .intent-danger[onhover] {
     background-color: $danger-5;
-    border: $border-width-thin solid $danger-5;
+    border: $border-width-thin solid $danger-7;
     color: $neutral-1;
 }
-.intent-danger:active {
+.intent-danger:active, .intent-danger[onactive] {
     background-color: $danger-7;
-    border: $border-width-thin solid $danger-7;
+    border: $border-width-thin solid $danger-9;
     color: $neutral-1;
 }
 .intent-danger:disabled {
@@ -93,15 +94,17 @@
     background: transparent;
     border: $border-width-thin solid transparent;
 }
-.intent-link:hover {
+.intent-link:hover, .intent-link[onhover] {
     color: $primary-5;
     text-decoration: underline;
     background: transparent;
+    border: $border-width-thin solid transparent;
 }
-.intent-link:active {
+.intent-link:active, .intent-link[onactive] {
     color: $primary-7;
     text-decoration: underline;
     background: transparent;
+    border: $border-width-thin solid transparent;
 }
 .intent-link:disabled {
     color: $primary-4;
@@ -115,11 +118,13 @@
     background: transparent;
     border: $border-width-thin solid transparent;
 }
-.intent-plain:hover{
+.intent-plain:hover, .intent-plain[onhover]{
     background-color: $color-background-mask-hover;
+    border: $border-width-thin solid transparent;
 }
-.intent-plain:active{
+.intent-plain:active, .intent-plain[onactive]{
     background-color: $color-background-mask-pressed;
+    border: $border-width-thin solid transparent;
 }
 
 .intent-plain:disabled{
