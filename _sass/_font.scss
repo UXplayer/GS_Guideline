@@ -1,38 +1,58 @@
-.heading-huge{
-	font-size: 32px;
-	color: $neutral-10;
+
+.size-heading-large{
+	font-size: $font-size-heading-l;
 }
-.heading-large{
-	font-size: 24px;
-	color: $neutral-10;
+.size-heading-medium{
+	font-size: $font-size-heading-m;
+}
+.size-heading-medium-inverse{
+	font-size: $font-size-heading-m;
 }
 
-.heading-medium{
-	font-size: 18px;
-	color: $neutral-10;
+.size-heading-small{
+	font-size: $font-size-heading-s;
 }
-.heading-medium-inverse{
-	font-size: 18px;
-	color: $neutral-1;
+.size-heading-small-inverse{
+	font-size: $font-size-heading-s;
 }
-
-.heading-small{
-	font-size: 14px;
-	color: $neutral-10;
+.size-title{
+	font-size: $font-size-l;
 }
-.heading-small-inverse{
-	font-size: 14px;
-	color: $neutral-1;
+.size-body{
+	font-size: $font-size-m;
+}
+.size-caption{
+	font-size: $font-size-s;
 }
 
-.body-default{
-	font-size: 12px;
-	color: $neutral-10;
+
+
+.color-dark{
+	color: $neutral-10;	
 }
-.body-faint{
-	font-size: 12px;
-	color: $neutral-7;
+.color-normal{
+	color: $neutral-8;	
 }
+.color-light{
+	color: $neutral-7;	
+}
+.color-faint{
+	color: $neutral-6;	
+}
+.color-info{
+	color: $primary-6;	
+}
+.color-success{
+	color: $success-6;	
+}
+.color-warning{
+	color: $warning-6;	
+}
+.color-danger{
+	color: $danger-6;	
+}
+
+
 .input-name{    
 	$font-size: $font-size-m;
 	text-align: right;
@@ -50,12 +70,12 @@ QLabel{
 }
 
 QLabel[textSize="HeadingLarge"]{
-	font-size: 32px;
+	font-size: $font-size-heading-l;
 	line-height: 32px;
 }
 
 QLabel[textSize="HeadingMedium"]{
-	font-size: 24px;
+	font-size: $font-size-heading-l;
 	line-height: 24px;
 }
 
