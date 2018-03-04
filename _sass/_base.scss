@@ -11,7 +11,7 @@ body {
 }
 pre,textarea{
 	margin: 0;
-	padding: 0 $size-3;
+	padding: 0 $spacing-l;
 	border-radius: 4px;
 	background: $neutral-1;
 	border: 1px solid $neutral-5;
@@ -32,8 +32,8 @@ pre,textarea{
 // }
 .attribute-name{
 	margin: 0;
-	padding: 0 $size-1;
-	margin: 0 $size-1;
+	padding: 0 $spacing-s;
+	margin: 0 $spacing-s;
 	border-radius: 2px;
 	background: $neutral-1;
 	border: 1px solid $neutral-5;
@@ -52,26 +52,12 @@ li.sidelist{
 	text-align: left;
 }
 
-
-
-
 .progress-bar {
-	// background-size: 23em 0.25em;
 	width:100%;
 	height: 2px;
 	position: relative;
-	background-image: linear-gradient(to right, rgb(210,230,243), rgb(19,124,189));
+	background-image: linear-gradient(to right, $primary-2, $primary-6);
 		-webkit-animation: cssload-width 1.45s cubic-bezier(0.85,0.85,0.85,0.85) infinite;
-
-		// animation: cssload-width 1.05s cubic-bezier(0.45, 0, 1, 1) infinite;
-		// -o-animation: cssload-width 1.05s cubic-bezier(0.45, 0, 1, 1) infinite;
-		// -ms-animation: cssload-width 1.05s cubic-bezier(0.45, 0, 1, 1) infinite;
-		// -moz-animation: cssload-width 1.05s cubic-bezier(0.45, 0, 1, 1) infinite;
-
-		// background-image: -o-linear-gradient(to right, rgb(19,124,188), rgb(19,124,189));
-		// background-image: -ms-linear-gradient(to right, rgb(19,124,188), rgb(19,124,189));
-		// background-image: -webkit-linear-gradient(to right, rgb(210,230,243), rgb(19,124,189));
-		// background-image: -moz-linear-gradient(to right, rgb(19,124,188), rgb(19,124,189));
 }
 
 @keyframes cssload-width {

@@ -86,36 +86,36 @@
 	   			<div class="row">
 	   				<div class="col-12">
 			   			<div class="uicell float-left">
-							<button class="button icon-small"><i class="fa fa-cog fa-sm" title="Setting"></i></button>
-							<button class="button icon-normal"><i class="fa fa-cog fa-lg" title="Setting"></i></button>
-							<button class="button icon-small iconactived"><i class="fa fa-cog fa-sm" title="Setting"></i></button>
-							<button class="button icon-normal iconactived"><i class="fa fa-cog fa-lg" title="Setting"></i></button>
-					        <button class="button"><i class="fa fa-user fa-lg""></i> User</button>
-					        <button class="button iconactived"><i class="fa fa-user fa-lg""></i> User</button>
+							<div class="button icon-small"><i class="fa fa-cog fa-sm" title="Setting"></i></div>
+							<div class="button icon-normal"><i class="fa fa-cog fa-lg" title="Setting"></i></div>
+							<div class="button icon-small iconactived"><i class="fa fa-cog fa-sm" title="Setting"></i></div>
+							<div class="button icon-normal iconactived"><i class="fa fa-cog fa-lg" title="Setting"></i></div>
+					        <div class="button"><i class="fa fa-user fa-lg""></i> User</div>
+					        <div class="button iconactived"><i class="fa fa-user fa-lg""></i> User</div>
 				        </div>
 			        </div>	        
 		        </div>
 		        <div class="row">
 	   				<div class="col-12">
 			   			<div class="uicell float-left">
-							<button class="button icon-small plain"><i class="fa fa-cog fa-sm" title="Setting"></i></button>
-							<button class="button icon-normal plain"><i class="fa fa-cog fa-lg" title="Setting"></i></button>
-							<button class="button icon-small plain iconactived" actived><i class="fa fa-cog fa-sm" title="Setting"></i></button>
-							<button class="button icon-normal plain iconactived" actived><i class="fa fa-cog fa-lg" title="Setting"></i></button>
-					        <button class="button plain"><i class="fa fa-user fa-lg""></i> User</button>
-					        <button class="button plain" actived><i class="fa fa-user fa-lg""></i> User</button>
+							<div class="button icon-small plain"><i class="fa fa-cog fa-sm" title="Setting"></i></div>
+							<div class="button icon-normal plain"><i class="fa fa-cog fa-lg" title="Setting"></i></div>
+							<div class="button icon-small plain iconactived" actived><i class="fa fa-cog fa-sm" title="Setting"></i></div>
+							<div class="button icon-normal plain iconactived" actived><i class="fa fa-cog fa-lg" title="Setting"></i></div>
+					        <div class="button plain"><i class="fa fa-user fa-lg""></i> User</div>
+					        <div class="button plain" actived><i class="fa fa-user fa-lg""></i> User</div>
 				        </div>
 			        </div>
 		        </div>
 		        <div class="row">
 	   				<div class="col-12">
 			   			<div class="uicell float-left bg-inverse">
-							<button class="button icon-small plain-inverse"><i class="fa fa-cog fa-sm" title="Setting"></i></button>
-							<button class="button icon-normal plain-inverse"><i class="fa fa-cog fa-lg" title="Setting"></i></button>
-							<button class="button icon-small plain-inverse iconactived" actived><i class="fa fa-cog fa-sm" title="Setting"></i></button>
-							<button class="button icon-normal plain-inverse iconactived" actived><i class="fa fa-cog fa-lg" title="Setting"></i></button>
-					        <button class="button plain-inverse"><i class="fa fa-user fa-lg""></i> User</button>
-					        <button class="button plain-inverse" actived><i class="fa fa-user fa-lg""></i> User</button>
+							<div class="button icon-small plain-inverse"><i class="fa fa-cog fa-sm" title="Setting"></i></div>
+							<div class="button icon-normal plain-inverse"><i class="fa fa-cog fa-lg" title="Setting"></i></div>
+							<div class="button icon-small plain-inverse iconactived" actived><i class="fa fa-cog fa-sm" title="Setting"></i></div>
+							<div class="button icon-normal plain-inverse iconactived" actived><i class="fa fa-cog fa-lg" title="Setting"></i></div>
+					        <div class="button plain-inverse"><i class="fa fa-user fa-lg""></i> User</div>
+					        <div class="button plain-inverse" actived><i class="fa fa-user fa-lg""></i> User</div>
 				        </div>
 			        </div>
 		        </div>
@@ -138,8 +138,8 @@
     line-height: 28px;
     height: 28px;
     min-width: 68px;
-    padding: 0 $size-3;
-    margin: 0 $size-1 0 0;
+    padding: 0 $spacing-l;
+    margin: 0 $spacing-s 0 0;
     display: inline-block;
 }
 						</code>
@@ -168,17 +168,22 @@
 			   					<StyledCommonButton group="GroupFirst" btnSize="IconNormal" intent="IntentPrimary">save</StyledCommonButton>
 			        			<StyledCommonButton group="GroupLast" btnSize="SizeDropNormal" intent="IntentPrimary"><span class="fa fa-caret-down" title="Toggle dropdown menu"></span></StyledCommonButton>
 
-			   					<button class="button group-first">first</button>
-			   					<button class="button group-middle">middle</button>
-			   					<button class="button group-last">last</button>
+			   					<div class="button group-first">first</div>
+			   					<div class="button group-middle">middle</div>
+			   					<div class="button group-last">last</div>
 
-			   					<button class="button intent-primary icon-normal group-first" title="已走下一步"><i class="fa fa-arrow-right"></i></button>
-			   					<button class="button intent-primary icon-normal group-middle" title="根据推荐生成新的下一步"><i class="fa fa-arrow-circle-right fa-lg"></i></button>   
-			   					<button class="button intent-primary icon-normal group-last droparrow" title="根据推荐生成新的下一步"><i class="fa fa-caret-down"></i></button>  
+			   					<div class="button icon-small group-first" title="根据推荐生成新的下一步"><i class="fa fa-arrow-circle-right fa-lg"></i></div>   
+			   					<div class="button icon-dropdown-small group-last" title="根据推荐生成新的下一步"><i class="fa fa-caret-down"></i></div>  
 
-					        	<button class="button icon-normal group-first"><i class="fa fa-align-left" title="Align Left"></i></button>
-						        <button class="button icon-normal group-middle"><i class="fa fa-align-center" title="Align Center"></i></button>
-						        <button class="button icon-normal group-last"><i class="fa fa-align-right" title="Align Right"></i></button>
+			   					<div class="button icon-normal group-first" title="根据推荐生成新的下一步"><i class="fa fa-arrow-circle-right fa-lg"></i></div>   
+			   					<div class="button icon-dropdown-normal group-last" title="根据推荐生成新的下一步"><i class="fa fa-caret-down"></i></div>  
+
+			   					<div class="button icon-large group-first" title="根据推荐生成新的下一步"><i class="fa fa-arrow-circle-right fa-lg"></i></div>   
+			   					<div class="button icon-dropdown-large group-last" title="根据推荐生成新的下一步"><i class="fa fa-caret-down"></i></div>  
+
+					        	<div class="button icon-normal group-first"><i class="fa fa-align-left" title="Align Left"></i></div>
+						        <div class="button icon-normal group-middle"><i class="fa fa-align-center" title="Align Center"></i></div>
+						        <div class="button icon-normal group-last"><i class="fa fa-align-right" title="Align Right"></i></div>
 				        </div>
 			        </div>
 		        </div>

@@ -4,6 +4,7 @@
 {% include head.html %}
 
 <body>
+
 		<div id="tabbar">
 			{% include tabbar.html %}
 		</div>
@@ -12,25 +13,19 @@
 		</div>
 		<div id="workspace">
 
-			<div id="main">	  
+			<div id="main">	    
 				<div class="row">
 		   			<div class="col-12">
 						<div class="uiapp">
-						  	{% include QLineEdit.html %}
+						  	{% include label.html %}
 					  	</div>
 				  	</div>
-			  	</div>        
-				<div class="row">
-		   			<div class="col-12">
-						<div class="uiapp">
-					  	</div>
-				  	</div>
-			  	</div>    
+			  	</div>   
 			</div>
 
-		<div>
+		</div>
 		<div id="statusbar"></div>
-	{% include scripts.html %}
+{% include scripts.html %}
 </body>
 
 </html>

@@ -1,36 +1,33 @@
 /* 按钮的基本样式*/
-.button{    
-    // display: inline-block;
-    $font-size: $font-size-m;
-    $padding-v: $spacing-0;
-    $padding-h: $spacing-m;
-    $border-width: $border-width-thin;
+.QPushButton{    
+    display: inline-block;
 
-    height: $font-size * 1.5 + $padding-v * 2 + $border-width * 2; // 1.5倍的行高 + 上下 padding + 上下 border（QSS 中不需要额外加 padding 和 border）
-    min-width: $font-size * 3 + $padding-h * 2 + $border-width * 2; // 3个文字的宽度 + 左右 padding + 左右 border（QSS 中不需要额外加 padding 和 border）
-    padding: $padding-v $padding-h;
-    margin:0;
+    // height: $line-height-m;
+    min-width: $font-size-m * 3;
+    padding: $spacing-0 $spacing-m;
+    margin: 0;
+    font-size: $font-size-m;
+    line-height: $line-height-m;
 
-    font-size: $font-size;
     color: $neutral-8;
     text-align: center;
-
     background-color: $neutral-1;
     background-image: linear-gradient(0deg, rgba( $white, 0), rgba( $white, 1));
-    border: $border-width solid $neutral-5;
+    border: $border-width-thin solid $neutral-5;
+
     border-radius: $border-radius-m;
 }
 
 /* 普通按钮的各个状态*/
-.button:hover, .button[onhover] {
+.QPushButton:hover, .QPushButton[onhover] {
     background-color: $white;
 }
 
-.button:active, .button[onactive] {
+.QPushButton:active, .QPushButton[onactive] {
     background-color: $neutral-2;
     background-image: none;
 }
-.button:disabled{    
+.QPushButton[disabled]{    
     color: $neutral-7;
     background-color: $neutral-4;
     background-image: none;
@@ -44,22 +41,22 @@
 .intent-primary {
     background-color: $primary-6;
     background-image: linear-gradient(0deg, rgba( $white, 0), rgba( $white, .1));
-    border: $border-width-thin solid $primary-8;
+    border-color: $primary-8;
     color: $neutral-1;
 }
 .intent-primary:hover, .intent-primary[onhover]{
     background-color: $primary-5;
-    border: $border-width-thin solid $primary-7;
+    border-color: $primary-7;
     color: $neutral-1;
 }
 .intent-primary:active, .intent-primary[onactive] {
     background-color: $primary-7;
-    border: $border-width-thin solid $primary-9;
+    border-color: $primary-9;
     color: $neutral-1;
 }
-.intent-primary:disabled {
+.intent-primary[disabled]{
     background-color: $primary-3;
-    border: $border-width-thin solid $primary-3;
+    border-color: $primary-3;
     color: $primary-1;
     opacity: 0.8;
 }
@@ -68,22 +65,22 @@
 .intent-danger {
     background-color: $danger-6;
     background-image: linear-gradient(0deg, rgba( $white, 0), rgba( $white, .1));
-    border: $border-width-thin solid $danger-8;
+    border-color: $danger-8;
     color: $neutral-1;
 }
 .intent-danger:hover, .intent-danger[onhover] {
     background-color: $danger-5;
-    border: $border-width-thin solid $danger-7;
+    border-color: $danger-7;
     color: $neutral-1;
 }
 .intent-danger:active, .intent-danger[onactive] {
     background-color: $danger-7;
-    border: $border-width-thin solid $danger-9;
+    border-color: $danger-9;
     color: $neutral-1;
 }
-.intent-danger:disabled {
+.intent-danger[disabled] {
     background-color: $danger-3;
-    border: $border-width-thin solid $danger-3;
+    border-color: $danger-3;
     color: $danger-1;
     opacity: 0.8;
 }
@@ -92,45 +89,45 @@
 .intent-link {
     color: $primary-6;
     background: transparent;
-    border: $border-width-thin solid transparent;
+    border-color: transparent;
 }
 .intent-link:hover, .intent-link[onhover] {
     color: $primary-5;
     text-decoration: underline;
     background: transparent;
-    border: $border-width-thin solid transparent;
+    border-color: transparent;
 }
 .intent-link:active, .intent-link[onactive] {
     color: $primary-7;
     text-decoration: underline;
     background: transparent;
-    border: $border-width-thin solid transparent;
+    border-color: transparent;
 }
-.intent-link:disabled {
+.intent-link[disabled]{
     color: $primary-4;
     background: transparent;
-    border: $border-width-thin solid transparent;
+    border-color: transparent;
     opacity: 0.8;
 }
 
 .intent-plain{
     color: $neutral-8;
     background: transparent;
-    border: $border-width-thin solid transparent;
+    border-color: transparent;
 }
 .intent-plain:hover, .intent-plain[onhover]{
     background-color: $color-background-mask-hover;
-    border: $border-width-thin solid transparent;
+    border-color: transparent;
 }
 .intent-plain:active, .intent-plain[onactive]{
     background-color: $color-background-mask-pressed;
-    border: $border-width-thin solid transparent;
+    border-color: transparent;
 }
 
-.intent-plain:disabled{
+.intent-plain[disabled]{
     color: $neutral-6;
     background-color: transparent;
-    border: $border-width-thin solid transparent;
+    border-color: transparent;
     opacity: 0.8;
 }
 
@@ -142,150 +139,80 @@
 }
 
 .plain-inverse,{
-    background: transparent;
-    border: 0;
     color: $primary-1;
+    background: transparent;
+    border-color: transparent;
 }
 .plain-inverse[actived]{
     background: transparent;
-    // border: 0;
     color: $primary-5;
 }
 
 .plain-inverse:hover,.plain-inverse[actived]:hover{
     background-color: $color-background-mask-inverse-hover;
-    // border: 0;
 }
 .plain-inverse:active,.plain-inverse[actived]:active{
     background-color: $color-background-mask-inverse-pressed;
-    // border: 0;
 }
 
 /* 不同的按钮尺寸 */
 .size-small{
-    $font-size: $font-size-m;
-    $padding-v: $spacing-0;
-    $padding-h: $spacing-m;
-    $border-width: $border-width-thin;
-
-    height: $font-size + $spacing-0 + $padding-v * 2 + $border-width * 2; // 1.5倍的行高 + 上下 padding + 上下 border（QSS 中不需要额外加 padding 和 border）
-    min-width: $font-size + $font-size-m + $padding-h * 2 + $border-width * 2; // 3个文字的宽度 + 左右 padding + 左右 border（QSS 中不需要额外加 padding 和 border）
-    padding: $padding-v $padding-h;
-
-    font-size: $font-size;
+    // height: $line-height-s;
+    min-width: $font-size-s * 3;
+    padding: 0 $spacing-s;
+    font-size: $font-size-s;
+    line-height: $line-height-s;
+}
+.size-small.icon{
+    min-width: $line-height-s;
+    padding-left: 0; 
+    padding-right: 0;   
+}
+.size-small.dropdown{
+    min-width: $line-height-s / 2;
+}
+.size-small.fill{
+    min-width: 100%; // 宽度为 100%（由其父容器控制）
 }
 
 .size-normal{
-    $font-size: $font-size-m;
-    $padding-v: $spacing-0;
-    $padding-h: $spacing-m;
-    $border-width: $border-width-thin;
-
-    height: $font-size + $font-size-m / 2 + $padding-v * 2 + $border-width * 2; // 1.5倍的行高 + 上下 padding + 上下 border（QSS 中不需要额外加 padding 和 border）
-    min-width: $font-size + $font-size-m * 2 + $padding-h * 2 + $border-width * 2; // 3个文字的宽度 + 左右 padding + 左右 border（QSS 中不需要额外加 padding 和 border）
-    padding: $padding-v $padding-h;
-
-    font-size: $font-size;
+    // height: $line-height-m;
+    min-width: $font-size-m * 3;
+    padding: $spacing-0 $spacing-m;
+    margin: 0;
+    font-size: $font-size-m;
+    line-height: $line-height-m;
+}
+.size-normal.icon{
+    min-width: $line-height-m;
+    padding-left: $spacing-0; 
+    padding-right: $spacing-0;   
+}
+.size-normal.dropdown{
+    min-width: $line-height-m / 2;
+}
+.size-normal.fill{
+    min-width: 100%; // 宽度为 100%（由其父容器控制）
 }
 
 .size-large{
-    $font-size: $font-size-l;
-    $padding-v: $spacing-s;
-    $padding-h: $spacing-l;
-    $border-width: $border-width-thin;
-
-    height: $font-size + $font-size-m / 2 + $padding-v * 2 + $border-width * 2; // 1.5倍的行高 + 上下 padding + 上下 border（QSS 中不需要额外加 padding 和 border）
-    min-width: $font-size + $font-size-m * 2 + $padding-h * 2 + $border-width * 2; // 3个文字的宽度 + 左右 padding + 左右 border（QSS 中不需要额外加 padding 和 border）
-    padding: $padding-v $padding-h;
-
-    font-size: $font-size;
+    // height: $line-height-l;
+    min-width: $font-size-l * 3;
+    padding: $spacing-s $spacing-l;
+    margin: 0;
+    font-size: $font-size-l;
+    line-height: $line-height-l;
 }
-
-.size-fill{
-    $font-size: $font-size-l;
-    $padding-v: $spacing-s;
-    $padding-h: $spacing-l;
-    $border-width: $border-width-thin;
-
-    height: $font-size + $font-size-m / 2 + $padding-v * 2 + $border-width * 2; // 1.5倍的行高 + 上下 padding + 上下 border（QSS 中不需要额外加 padding 和 border）
-    min-width: 100%;
-    padding: $padding-v $padding-h;
-
-    font-size: $font-size;
+.size-large.icon{
+    min-width: $line-height-l;
+    padding-left: $spacing-s; 
+    padding-right: $spacing-s;   
 }
-
-/* Icon按钮类型 */
-.icon-small{    
-    $font-size: $font-size-m;
-    $padding-v: $spacing-0;
-    $padding-h: $spacing-0;
-    $border-width: $border-width-thin;
-
-    min-height: $font-size + $spacing-0 + $padding-v * 2 + $border-width * 2; 
-    max-height: $font-size + $spacing-0 + $padding-v * 2 + $border-width * 2; 
-    min-width: $font-size + $spacing-0 + $padding-h * 2 + $border-width * 2;
-    padding: $padding-v $padding-h;
+.size-large.dropdown{
+    min-width: $line-height-l / 2;
 }
-.icon-normal{
-    $font-size: $font-size-m;
-    $padding-v: $spacing-0;
-    $padding-h: $spacing-0;
-    $border-width: $border-width-thin;
-
-    min-height: $font-size + $font-size-m / 2 + $padding-v * 2 + $border-width * 2;
-    max-height: $font-size + $font-size-m / 2 + $padding-v * 2 + $border-width * 2;
-    min-width: $font-size + $font-size-m / 2 + $padding-h * 2 + $border-width * 2; 
-    padding: $padding-v $padding-h;
-}
-.icon-large{
-    $font-size: $font-size-l;
-    $padding-v: $spacing-s;
-    $padding-h: $spacing-s;
-    $border-width: $border-width-thin;
-
-    min-height: $font-size + $font-size-m / 2 + $padding-v * 2 + $border-width * 2; 
-    min-height: $font-size + $font-size-m / 2 + $padding-v * 2 + $border-width * 2; 
-    min-width: $font-size + $font-size-m / 2 + $padding-h * 2 + $border-width * 2; 
-    padding: $padding-v $padding-h;
-}
-
-/* 下拉箭头 Icon 按钮 */
-.icon-dropdown-small{    
-    $font-size: $font-size-m;
-    $padding-v: $spacing-0;
-    $padding-h: $spacing-0;
-    $border-width: $border-width-thin;
-
-    min-height: $font-size + $spacing-0 + $padding-v * 2 + $border-width * 2;
-    max-height: $font-size + $spacing-0 + $padding-v * 2 + $border-width * 2;
-    min-width: $font-size / 2 + $spacing-0 + $padding-h * 2 + $border-width * 2; 
-    max-width: $font-size / 2 + $spacing-0 + $padding-h * 2 + $border-width * 2; 
-    padding: $padding-v $padding-h;
-}
-.icon-dropdown-normal{
-    $font-size: $font-size-m;
-    $padding-v: $spacing-0;
-    $padding-h: $spacing-0;
-    $border-width: $border-width-thin;
-
-    min-height: $font-size + $font-size-m / 2 + $padding-v * 2 + $border-width * 2; 
-    max-height: $font-size + $font-size-m / 2 + $padding-v * 2 + $border-width * 2; 
-    min-width: $font-size / 2 + $spacing-s + $padding-h * 2 + $border-width * 2; 
-    max-width: $font-size / 2 + $spacing-s + $padding-h * 2 + $border-width * 2; 
-    padding: $padding-v $padding-h;
-
-}
-.icon-dropdown-large{
-    $font-size: $font-size-l;
-    $padding-v: $spacing-s;
-    $padding-h: $spacing-s;
-    $border-width: $border-width-thin;
-
-    min-height: $font-size + $font-size-m / 2 + $padding-v * 2 + $border-width * 2; 
-    max-height: $font-size + $font-size-m / 2 + $padding-v * 2 + $border-width * 2; 
-    min-width: $font-size / 2 + $spacing-s + $padding-h * 2 + $border-width * 2; 
-    max-width: $font-size / 2 + $spacing-s + $padding-h * 2 + $border-width * 2; 
-    padding: $padding-v $padding-h;
+.size-large.fill{
+    min-width: 100%; // 宽度为 100%（由其父容器控制）
 }
 
 
@@ -302,7 +229,7 @@
 .group-last{
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
-    margin-left: -4px;
+    margin-left: -5px;
 }
 
 .plain,{
@@ -312,14 +239,7 @@
 }
 .plain[actived],{
     background: transparent;
-    // border: 0;
     color: $primary-6;
 }
 
-
-
-.iconactived{
-    // background-color: $primary-1;
-    border: $border-width-thin solid $primary-4;
-}
 

@@ -7,6 +7,7 @@
 }
 
 #tabbar{
+	overflow: hidden;
     display: block;
   	position: relative;
 	background: $neutral-9;
@@ -96,17 +97,17 @@
 .container{
 	display: block;
 	content: " ";
-	// padding-right: $size-4;
-	// padding-left: $size-4;	
+	// padding-right: $size-unit * 4;
+	// padding-left: $size-unit * 4;	
 	width: 100%;
 	margin-right: auto;
 	margin-left: auto;
 }
 .uicell{
-	padding: $size-1 $size-2;
+	padding: $spacing-s $spacing-m;
 }
 .uigroup{
-	padding: $size-2 $size-4;
+	padding: $spacing-m $size-unit * 4;
 	// border: 1px solid $neutral-6;
 	// margin: -1px;
 }
@@ -140,8 +141,8 @@
 
 .row { 
 	display: table;
-	// margin-right: $size-4 * -1;
-	// margin-left: $size-4 * -1;
+	// margin-right: $size-unit * 4 * -1;
+	// margin-left: $size-unit * 4 * -1;
 	width: 100%;
 	// height: 100%;
 	min-height: 1px;
@@ -157,8 +158,8 @@
 	float: left;
 	// border: 1px solid $neutral-5;
 	// margin: -1px;
-	// padding-top: $size-2;
-	// padding-bottom: $size-2;
+	// padding-top: $spacing-m;
+	// padding-bottom: $spacing-m;
 }
 .col-12 {
   width: 100%;

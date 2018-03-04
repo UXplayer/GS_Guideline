@@ -2,115 +2,79 @@
 ---
 
 @charset "utf-8";
+@import "colors2";
 
-// variables.less
-//ColorPalette
-$neutral-10: #FFFFFF;
-$neutral-9: #F5F8FA;
-$neutral-8: #E1E8ED;
-$neutral-7: #CED9E0;
-$neutral-6: #BFCCD6;
-$neutral-5: #8A9BA8;
-$neutral-4: #5C7080;
-$neutral-3: #394B59;
-$neutral-2: #293742;
-$neutral-1: #182026;
-$neutral-3-alpha-2: rgba(57,75,89,0.18); //gery-8
-$neutral-3-alpha-4: rgba(57,75,89,0.38); //gery-8
-$neutral-8-alpha-2: rgba(225,232,237,0.18); //gery-3
-$neutral-8-alpha-4: rgba(225,232,237,0.38); //gery-3
+// TextColor
+$color-text-label-dark: $neutral-10;
+$color-text-label-normal: $neutral-8;
+$color-text-label-light: $neutral-7;
+$color-text-label-faint: $neutral-5;
+$color-text-label-info: $primary-6;
+$color-text-label-success: $success-6;
+$color-text-label-warning: $warning-6;
+$color-text-label-danger: $danger-6;
 
-$primary-10: #ECF5FA;
-$primary-9: #D2E6F3;
-$primary-8: #AED2E8;
-$primary-7: #80B8DB;
-$primary-6: #4B9BCD;
-$primary-5: #137CBD;
-$primary-4: #1068A4;
-$primary-3: #0E5489;
-$primary-2: #0B3F6F;
-$primary-1: #082A54;
+//背景遮罩层
+$color-background-mask-hover: rgba( $neutral-8, .18 ); 
+$color-background-mask-pressed: rgba( $neutral-8, .38 ); 
+$color-background-mask-disabled: rgba( $neutral-8, .08 ); 
+$color-background-mask-modal: rgba( $neutral-8, .5 ); 
 
-// $primary-1: #7a0000;
-// $primary-2: #991b00;
-// $primary-3: #b93600;
-// $primary-4: #d75000;
-// $primary-5: #f56a00;
-// $primary-6: #f78e3d;
-// $primary-7: #faaf76;
-// $primary-8: #fccca7;
-// $primary-9: #fde3cf;
-// $primary-10: #fef3eb;
+$color-background-mask-inverse-hover: rgba( $neutral-3, .18 ); 
+$color-background-mask-inverse-pressed: rgba( $neutral-3, .38 ); 
+$color-background-mask-inverse-modal: rgba( $neutral-3, .5 ); 
 
-$info-10: #ECF5FA;
-$info-9: #D2E6F3;
-$info-8: #AED2E8;
-$info-7: #80B8DB;
-$info-6: #4B9BCD;
-$info-5: #137CBD;
-$info-4: #1068A4;
-$info-3: #0E5489;
-$info-2: #0B3F6F;
-$info-1: #082A54;
+$neutral-8-alpha-2: rgba( $neutral-8, .18 ); 
+$neutral-8-alpha-4: rgba( $neutral-8, .38 ); 
+$neutral-3-alpha-2: rgba( $neutral-3, .18 ); 
+$neutral-3-alpha-4: rgba( $neutral-3, .38 ); 
 
-$tmpl-1: #F6EFF6;
-$tmpl-2: #EADAEA;
-$tmpl-3: #D9BBD9;
-$tmpl-4: #C394C3;
-$tmpl-5: #AA68AA;
-$tmpl-6: #8F398F;
-$tmpl-7: #7C317B;
-$tmpl-8: #692A66;
-$tmpl-9: #562250;
-$tmpl-10: #421A3B;
 
-$success-1: #ECF7F2;
-$success-2: #D2ECE1;
-$success-3: #ADDCC8;
-$success-4: #7EC8A9;
-$success-5: #48B186;
-$success-6: #0F9960;
-$success-7: #0D8556;
-$success-8: #0B704B;
-$success-9: #095B41;
-$success-10: #074636;
-      
-$warning-1: #FCF5EE;
-$warning-2: #F8E7D7;
-$warning-3: #F2D4B6;
-$warning-4: #EBBC8D;
-$warning-5: #E2A05E;
-$warning-6: #D7812B;
-$warning-7: #C06925;
-$warning-8: #A64F20;
-$warning-9: #8C3B1A;
-$warning-10: #702614;
 
-$danger-10: #FCEEEE;
-$danger-9: #F7D7D7;
-$danger-8: #F1B6B6;
-$danger-7: #E98D8D;
-$danger-6: #E15E5E;
-$danger-5: #D72B2B;
-$danger-4: #BE262F;
-$danger-3: #A32030;
-$danger-2: #8A1B2E;
-$danger-1: #70152A;
-
+// Size
 $size-unit: 4px;
-$size-0: 2px;
-$size-1: $size-unit;
-$size-2: $size-unit*2;
-$size-3: $size-unit*3;
-$size-4: $size-unit*4;
-$size-5: $size-unit*5;
-$size-6: $size-unit*6;
-$size-7: $size-unit*7;
-//Layout
+
+$spacing-0: $size-unit / 2; // 最小间距，即使是两个紧挨着的控件之间也有一定的间距，而不是 0 间距（除了 Tab、GroupButton 之类互相重叠、间距为负的除外）
+$spacing-s: $size-unit * 1; // 较小间距 4 
+$spacing-m: $size-unit * 2; // 标准间距 8
+$spacing-l: $size-unit * 3; // 较大间距 12
+
+// Border
+$border-width-thin: 1px;
+$border-width-medium: $size-unit / 2;
+$border-width-thick: $size-unit * 1;
+
+// border-radius-0
+$border-radius-0: 0;
+$border-radius-s: $size-unit * 0.5;
+$border-radius-m: $size-unit * 1;
+$border-radius-l: $size-unit * 2;
+$border-radius-max: $size-unit * 99; // QSS 不支持该设置，效果是最大圆角，即 min(height,width)/2
+
+// Text
+$font-size: 12px;
+
+$font-size-s: round($font-size * 5/6); //10px
+$font-size-m: round($font-size * 6/6); //12px
+$font-size-l: round($font-size * 7/6); //14px
+$font-size-heading-s: round($font-size * 9/6); //18px;
+$font-size-heading-m: round($font-size * 12/6); //24px
+$font-size-heading-l: round($font-size * 16/6); //32px;
+
+//行高，对应 font-size 的 3/2、1.5倍，并向上取偶数
+$line-height-s: if(ceil($font-size-s * 3/2) % 2 == 0px, ceil($font-size-s * 3/2), ceil($font-size-s * 3/2) + 1); //16px
+$line-height-m: if(ceil($font-size-m * 3/2) % 2 == 0px, ceil($font-size-m * 3/2), ceil($font-size-m * 3/2) + 1); //18px
+$line-height-l: if(ceil($font-size-l * 3/2) % 2 == 0px, ceil($font-size-l * 3/2), ceil($font-size-l * 3/2) + 1); //22px
+
+//Icon，对应 font-size 的 4/3、1.333倍，并向上取偶数
+$icon-height-s: if(ceil($font-size-s * 4/3) % 2 == 0px, ceil($font-size-s * 4/3), ceil($font-size-s * 4/3) + 1); //14px
+$icon-height-m: if(ceil($font-size-m * 4/3) % 2 == 0px, ceil($font-size-m * 4/3), ceil($font-size-m * 4/3) + 1); //16px
+$icon-height-l: if(ceil($font-size-l * 4/3) % 2 == 0px, ceil($font-size-l * 4/3), ceil($font-size-l * 4/3) + 1); //20px
+
+
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-/*
 @import
         "mixins",
         "base",
@@ -120,7 +84,6 @@ $size-7: $size-unit*7;
         "button",
         "tab",
         "input",
-      	"qpushbutton",
-      	"qprogressbar" 
+        "qpushbutton",
+        "qprogressbar"
 ;
-*/

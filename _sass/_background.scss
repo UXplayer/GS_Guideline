@@ -18,14 +18,14 @@
 .space-w-3,
 .space-w-4{display: inline-block;}
 
-.space-w-1{	width: $size-1}
-.space-w-2{	width: $size-2}
-.space-w-3{	width: $size-3}
-.space-w-4{	width: $size-4}
+.space-w-1{	width: $spacing-s}
+.space-w-2{	width: $spacing-m}
+.space-w-3{	width: $spacing-l}
+.space-w-4{	width: $size-unit * 4}
 
 
-.space-h-1{	height: $size-1}
-.space-h-2{	height: $size-2}
-.space-h-3{	height: $size-3}
-.space-h-4{	height: $size-4}
+.space-h-1{	height: $spacing-s}
+.space-h-2{	height: $spacing-m}
+.space-h-3{	height: $spacing-l}
+.space-h-4{	height: $size-unit * 4}
 

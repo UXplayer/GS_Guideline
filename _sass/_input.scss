@@ -1,14 +1,14 @@
 /* 输入框基本样式*/
-.QLineEdit{    
+.QLineEdit{       
+    display: inline-block;
     $font-size: $font-size-m;
+    $line-height: $line-height-m;
     $padding-v: $spacing-0;
-    $padding-h: $spacing-s;
+    $padding-h: $spacing-m;
     $border-width: $border-width-thin;
 
-    min-height: $font-size * 1.5; // 1.5倍的行高
-    max-height: $font-size * 1.5; // 1.5倍的行高
+    height: $line-height;
     min-width: $font-size * 9; // 9个文字的宽度
-    max-width: $font-size * 9; // 9个文字的宽度
     padding: $padding-v $padding-h;
     margin:0;
 
@@ -26,7 +26,6 @@
 }
 .QLineEdit.size-fill{
     width: 100%;
-    max-width: 100%;
 }
 .QLineEdit.error{
     $border-width: $border-width-thin;    
