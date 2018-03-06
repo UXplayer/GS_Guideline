@@ -3,74 +3,7 @@
 
 @charset "utf-8";
 @import "colors2";
-
-// TextColor
-$color-text-label-dark: $neutral-10;
-$color-text-label-normal: $neutral-8;
-$color-text-label-light: $neutral-7;
-$color-text-label-faint: $neutral-5;
-$color-text-label-info: $primary-6;
-$color-text-label-success: $success-6;
-$color-text-label-warning: $warning-6;
-$color-text-label-danger: $danger-6;
-
-//背景遮罩层
-$color-background-mask-hover: rgba( $neutral-8, .18 ); 
-$color-background-mask-pressed: rgba( $neutral-8, .38 ); 
-$color-background-mask-disabled: rgba( $neutral-8, .08 ); 
-$color-background-mask-modal: rgba( $neutral-8, .5 ); 
-
-$color-background-mask-inverse-hover: rgba( $neutral-3, .18 ); 
-$color-background-mask-inverse-pressed: rgba( $neutral-3, .38 ); 
-$color-background-mask-inverse-modal: rgba( $neutral-3, .5 ); 
-
-$neutral-8-alpha-2: rgba( $neutral-8, .18 ); 
-$neutral-8-alpha-4: rgba( $neutral-8, .38 ); 
-$neutral-3-alpha-2: rgba( $neutral-3, .18 ); 
-$neutral-3-alpha-4: rgba( $neutral-3, .38 ); 
-
-
-
-// Size
-$size-unit: 4px;
-
-$spacing-0: $size-unit / 2; // 最小间距，即使是两个紧挨着的控件之间也有一定的间距，而不是 0 间距（除了 Tab、GroupButton 之类互相重叠、间距为负的除外）
-$spacing-s: $size-unit * 1; // 较小间距 4 
-$spacing-m: $size-unit * 2; // 标准间距 8
-$spacing-l: $size-unit * 3; // 较大间距 12
-
-// Border
-$border-width-thin: 1px;
-$border-width-medium: $size-unit / 2;
-$border-width-thick: $size-unit * 1;
-
-// border-radius-0
-$border-radius-0: 0;
-$border-radius-s: $size-unit * 0.5;
-$border-radius-m: $size-unit * 1;
-$border-radius-l: $size-unit * 2;
-$border-radius-max: $size-unit * 99; // QSS 不支持该设置，效果是最大圆角，即 min(height,width)/2
-
-// Text
-$font-size: 12px;
-
-$font-size-s: round($font-size * 5/6); //10px
-$font-size-m: round($font-size * 6/6); //12px
-$font-size-l: round($font-size * 7/6); //14px
-$font-size-heading-s: round($font-size * 9/6); //18px;
-$font-size-heading-m: round($font-size * 12/6); //24px
-$font-size-heading-l: round($font-size * 16/6); //32px;
-
-//行高，对应 font-size 的 3/2、1.5倍，并向上取偶数
-$line-height-s: if(ceil($font-size-s * 3/2) % 2 == 0px, ceil($font-size-s * 3/2), ceil($font-size-s * 3/2) + 1); //16px
-$line-height-m: if(ceil($font-size-m * 3/2) % 2 == 0px, ceil($font-size-m * 3/2), ceil($font-size-m * 3/2) + 1); //18px
-$line-height-l: if(ceil($font-size-l * 3/2) % 2 == 0px, ceil($font-size-l * 3/2), ceil($font-size-l * 3/2) + 1); //22px
-
-//Icon，对应 font-size 的 4/3、1.333倍，并向上取偶数
-$icon-height-s: if(ceil($font-size-s * 4/3) % 2 == 0px, ceil($font-size-s * 4/3), ceil($font-size-s * 4/3) + 1); //14px
-$icon-height-m: if(ceil($font-size-m * 4/3) % 2 == 0px, ceil($font-size-m * 4/3), ceil($font-size-m * 4/3) + 1); //16px
-$icon-height-l: if(ceil($font-size-l * 4/3) % 2 == 0px, ceil($font-size-l * 4/3), ceil($font-size-l * 4/3) + 1); //20px
-
+@import "variables";
 
 
 

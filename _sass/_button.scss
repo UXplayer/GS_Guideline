@@ -116,11 +116,11 @@
     border-color: transparent;
 }
 .intent-plain:hover, .intent-plain[onhover]{
-    background-color: $color-background-mask-hover;
+    background-color: $background-color-mask-hover;
     border-color: transparent;
 }
 .intent-plain:active, .intent-plain[onactive]{
-    background-color: $color-background-mask-pressed;
+    background-color: $background-color-mask-pressed;
     border-color: transparent;
 }
 
@@ -132,10 +132,10 @@
 }
 
 .plain:hover,.plain[actived]:hover{
-    background-color: $color-background-mask-hover;
+    background-color: $background-color-mask-hover;
 }
 .plain:active,.plain[actived]:active{
-    background-color: $color-background-mask-pressed;
+    background-color: $background-color-mask-pressed;
 }
 
 .plain-inverse,{
@@ -149,10 +149,10 @@
 }
 
 .plain-inverse:hover,.plain-inverse[actived]:hover{
-    background-color: $color-background-mask-inverse-hover;
+    background-color: $background-color-mask-inverse-hover;
 }
 .plain-inverse:active,.plain-inverse[actived]:active{
-    background-color: $color-background-mask-inverse-pressed;
+    background-color: $background-color-mask-inverse-pressed;
 }
 
 /* 不同的按钮尺寸 */
