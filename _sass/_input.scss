@@ -1,63 +1,53 @@
 /* 输入框基本样式*/
 .QLineEdit{       
     display: inline-block;
-    $font-size: $font-size-m;
-    $line-height: $line-height-m;
-    $padding-v: $spacing-0;
-    $padding-h: $spacing-m;
-    $border-width: $border-width-thin;
 
-    height: $line-height;
+    height: $line-height-m;
     min-width: $font-size * 9; // 9个文字的宽度
-    padding: $padding-v $padding-h;
+    padding: $spacing-0 $spacing-m;
     margin:0;
 
-    font-size: $font-size;
+    font-size: $font-size-m;
     color: $neutral-10;
     text-align: left;
 
     background-color: $white;
-    border: $border-width solid $neutral-5;
+    border: $border-width-thin solid $neutral-5;
     border-radius: $border-radius-s;
 }
 
-.QLineEdit.nodeinput{
-    border-radius: $border-radius-max;
-}
+
 .QLineEdit.size-fill{
     width: 100%;
 }
+
 .QLineEdit.error{
-    $border-width: $border-width-thin;    
-    border: $border-width solid $danger-6;
+    border-color: $danger-6;
 }
-
-.QLineEdit[paraState="templatize"]{
-    background-color: $tmpl-1;
-}
-
 .QLineEdit:hover{
-    $border-width: $border-width-thin;    
-    border: $border-width solid $primary-5;
+    border-color: $primary-5;
 }
 
 .QLineEdit:active{
-    $border-width: $border-width-thin;
-    border-style: inset;    
-    border: $border-width solid $primary-6;
+    border-color: $primary-6;
 }
 
 .QLineEdit.onfocus{
-    $border-width: $border-width-thin;
-    border: $border-width solid $primary-6;
+    border-color: $primary-6;
+}
+.QLineEdit.placeholder{
+    color: $neutral-6;
 }
 
 .QLineEdit:disabled{ 
     background-color: $neutral-3;
     color: $neutral-6;
-    cursor: not-allowed；
 }
 
+
+.QLineEdit.nodeinput{
+    border-radius: $border-radius-max;
+}
 input::-webkit-input-placeholder { color: $neutral-6; }
 input::-moz-placeholder { color: $neutral-6; }
 input:-ms-input-placeholder { color: $neutral-6; }

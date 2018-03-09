@@ -2,7 +2,6 @@
 .QPushButton{    
     display: inline-block;
 
-    // height: $line-height-m;
     min-width: $font-size-m * 3;
     padding: $spacing-0 $spacing-m;
     margin: 0;
@@ -12,7 +11,7 @@
     color: $neutral-8;
     text-align: center;
     background-color: $neutral-1;
-    background-image: linear-gradient(0deg, rgba( $white, 0), rgba( $white, 1));
+    background-image: $background-gradient-light-normal;
     border: $border-width-thin solid $neutral-5;
 
     border-radius: $border-radius-m;
@@ -40,7 +39,7 @@
 /* intent-primary 显著按钮的状态样式 */
 .intent-primary {
     background-color: $primary-6;
-    background-image: linear-gradient(0deg, rgba( $white, 0), rgba( $white, .1));
+    background-image: $background-gradient-light-gentle;
     border-color: $primary-8;
     color: $neutral-1;
 }
@@ -64,7 +63,7 @@
 /* intent-danger 危险按钮的状态样式 */
 .intent-danger {
     background-color: $danger-6;
-    background-image: linear-gradient(0deg, rgba( $white, 0), rgba( $white, .1));
+    background-image: $background-gradient-light-gentle;
     border-color: $danger-8;
     color: $neutral-1;
 }

@@ -1,13 +1,13 @@
 .tab { 
+    display: inline-block;
 	background: $neutral-5;
-	border: 1px solid $neutral-6; 
-	color: $neutral-10;
-    font-size: 12px;
-    line-height: 24px;
-    height: 24px;
-    max-width: 200px;
-    padding: 0 $spacing-m;
-	margin-right: -4px; 
+    border: $border-width-thin solid $neutral-7;
+	color: $neutral-9;
+    font-size: $font-size-m;
+    line-height: $line-height-m;
+    max-width: $icon-size-m + $spacing-s + $font-size-m * 6 + $spacing-s + $icon-size-m;
+    padding: $spacing-s $spacing-m;
+	margin-right: -5px; 
 	border-bottom: none;
 } 
 .tab:hover{
@@ -21,8 +21,7 @@
 
 .tab-close{ 
 	color: $neutral-8;
-	font-size: 10px;
-	margin-left: 4px;
+	font-size: $font-size-s;
 }
 
 

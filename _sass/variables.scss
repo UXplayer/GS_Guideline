@@ -23,12 +23,22 @@ $background-color-mask-inverse-pressed: rgba( $neutral-3, .38 );
 $background-color-mask-inverse-disabled: rgba( $neutral-3, .08 ); 
 $background-color-mask-inverse-modal: rgba( $neutral-3, .5 ); 
 
-// Border
+//background-gradient
+$background-gradient-light-normal: linear-gradient(0deg, rgba( $white, 0), rgba( $white, 1));
+$background-gradient-light-gentle: linear-gradient(0deg, rgba( $white, 0), rgba( $white, 0.1));
+
+//border-color
+$border-color-dark: $neutral-6;
+$border-color-normal: $neutral-5;
+$border-color-light: $neutral-4;
+$border-color-faint: $neutral-3;
+
+//border-width
 $border-width-thin: 1px;
 $border-width-medium: $size-unit / 2;
 $border-width-thick: $size-unit * 1;
 
-// border-radius-0
+//border-radius-0
 $border-radius-0: 0;
 $border-radius-s: $size-unit * 0.5;
 $border-radius-m: $size-unit * 1;
@@ -51,9 +61,9 @@ $line-height-m: if(ceil($font-size-m * 3/2) % 2 == 0px, ceil($font-size-m * 3/2)
 $line-height-l: if(ceil($font-size-l * 3/2) % 2 == 0px, ceil($font-size-l * 3/2), ceil($font-size-l * 3/2) + 1); //22px
 
 //Icon，对应 font-size 的 4/3、1.333倍，并向上取偶数
-$icon-height-s: if(ceil($font-size-s * 4/3) % 2 == 0px, ceil($font-size-s * 4/3), ceil($font-size-s * 4/3) + 1); //14px
-$icon-height-m: if(ceil($font-size-m * 4/3) % 2 == 0px, ceil($font-size-m * 4/3), ceil($font-size-m * 4/3) + 1); //16px
-$icon-height-l: if(ceil($font-size-l * 4/3) % 2 == 0px, ceil($font-size-l * 4/3), ceil($font-size-l * 4/3) + 1); //20px
+$icon-size-s: if(ceil($font-size-s * 4/3) % 2 == 0px, ceil($font-size-s * 4/3), ceil($font-size-s * 4/3) + 1); //14px
+$icon-size-m: if(ceil($font-size-m * 4/3) % 2 == 0px, ceil($font-size-m * 4/3), ceil($font-size-m * 4/3) + 1); //16px
+$icon-size-l: if(ceil($font-size-l * 4/3) % 2 == 0px, ceil($font-size-l * 4/3), ceil($font-size-l * 4/3) + 1); //20px
 
 // TextColor
 $color-label-dark: $neutral-10;

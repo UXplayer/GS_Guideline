@@ -1,4 +1,11 @@
 
+QLabel{
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,"Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
+	font-size: $font-size-m;
+	line-height: $line-height-m;
+	color: $color-label-normal;
+}
+
 .size-heading-large{
 	font-size: $font-size-heading-l;
 }
@@ -26,30 +33,29 @@
 }
 
 
-
 .color-dark{
-	color: $neutral-10;	
+	color: $color-label-dark;	
 }
 .color-normal{
-	color: $neutral-8;	
+	color: $color-label-normal;	
 }
 .color-light{
-	color: $neutral-7;	
+	color: $color-label-light;	
 }
 .color-faint{
-	color: $neutral-6;	
+	color: $color-label-faint;	
 }
 .color-info{
-	color: $primary-6;	
+	color: $color-label-info;	
 }
 .color-success{
-	color: $success-6;	
+	color: $color-label-success;	
 }
 .color-warning{
-	color: $warning-6;	
+	color: $color-label-warning;	
 }
 .color-danger{
-	color: $danger-6;	
+	color: $color-label-danger;	
 }
 
 
