@@ -212,21 +212,21 @@ StyledCommonButton[btnSize="SizeDropSmall"]{
     max-width: 6px;
     line-height: 20px;
     height: 20px;
-    padding: 0 $spacing-0;
+    padding: 0 $spacing-xs;
 }
 StyledCommonButton[btnSize="SizeDropNormal"]{
     min-width: 10px;
     max-width: 10px;
     line-height: 28px;
     height: 28px;
-    padding: 0 $spacing-0;
+    padding: 0 $spacing-xs;
 }
 StyledCommonButton[btnSize="SizeDropLarge"]{
     min-width: 14px;
     max-width: 14px;
     line-height: 36px;
     height: 36px;
-    padding: 0 $spacing-0;
+    padding: 0 $spacing-xs;
 }
 
 /* 按钮组 */

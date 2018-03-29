@@ -3,7 +3,7 @@
     display: inline-block;
 
     min-width: $font-size-m * 3;
-    padding: $spacing-0 $spacing-m;
+    padding: $spacing-xs $spacing-m;
     margin: 0;
     font-size: $font-size-m;
     line-height: $line-height-m;
@@ -154,6 +154,8 @@
     background-color: $background-color-mask-inverse-pressed;
 }
 
+
+
 /* 不同的按钮尺寸 */
 .size-small{
     // height: $line-height-s;
@@ -170,28 +172,22 @@
 .size-small.dropdown{
     min-width: $line-height-s / 2;
 }
-.size-small.fill{
-    min-width: 100%; // 宽度为 100%（由其父容器控制）
-}
 
 .size-normal{
     // height: $line-height-m;
     min-width: $font-size-m * 3;
-    padding: $spacing-0 $spacing-m;
+    padding: $spacing-xs $spacing-m;
     margin: 0;
     font-size: $font-size-m;
     line-height: $line-height-m;
 }
 .size-normal.icon{
     min-width: $line-height-m;
-    padding-left: $spacing-0; 
-    padding-right: $spacing-0;   
+    padding-left: $spacing-xs; 
+    padding-right: $spacing-xs;   
 }
 .size-normal.dropdown{
     min-width: $line-height-m / 2;
-}
-.size-normal.fill{
-    min-width: 100%; // 宽度为 100%（由其父容器控制）
 }
 
 .size-large{
@@ -210,11 +206,11 @@
 .size-large.dropdown{
     min-width: $line-height-l / 2;
 }
-.size-large.fill{
-    min-width: 100%; // 宽度为 100%（由其父容器控制）
+
+.fill{
+    min-width: 100%; // 宽度为 100%（由其父容器控制）  
+    box-sizing: border-box;
 }
-
-
 
 /* group 由多个按钮组成 */
 .group-first{

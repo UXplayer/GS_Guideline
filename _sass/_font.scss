@@ -12,14 +12,7 @@ QLabel{
 .size-heading-medium{
 	font-size: $font-size-heading-m;
 }
-.size-heading-medium-inverse{
-	font-size: $font-size-heading-m;
-}
-
 .size-heading-small{
-	font-size: $font-size-heading-s;
-}
-.size-heading-small-inverse{
 	font-size: $font-size-heading-s;
 }
 .size-title{
@@ -33,6 +26,9 @@ QLabel{
 }
 
 
+.color-inverse{
+	color: $color-label-inverse;	
+}
 .color-dark{
 	color: $color-label-dark;	
 }

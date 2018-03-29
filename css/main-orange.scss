@@ -3,19 +3,12 @@
 
 @charset "utf-8";
 @import "colors-orange";
-@import "variables";
+@import "size";
 
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "mixins",
-        "base",
-        "layout",
-        "background",
-        "font",
-        "button",
-        "tab",
-        "input",
-        "qprogressbar"
+        "mixins"
 ;
+

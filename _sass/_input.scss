@@ -2,14 +2,14 @@
 .QLineEdit{       
     display: inline-block;
 
-    height: $line-height-m;
     min-width: $font-size * 9; // 9个文字的宽度
-    padding: $spacing-0 $spacing-m;
+    padding: $spacing-xs $spacing-m;
     margin:0;
 
     font-size: $font-size-m;
-    color: $neutral-10;
+    line-height: $line-height-m;
     text-align: left;
+    color: $neutral-10;
 
     background-color: $white;
     border: $border-width-thin solid $neutral-5;
@@ -19,6 +19,7 @@
 
 .QLineEdit.size-fill{
     width: 100%;
+    box-sizing: border-box;
 }
 
 .QLineEdit.error{

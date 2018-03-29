@@ -2,7 +2,7 @@
 /* 输入框基本样式*/
 .QLineEdit{    
     $font-size: $font-size-m;
-    $padding-v: $spacing-0;
+    $padding-v: $spacing-xs;
     $padding-h: $spacing-s;
     $border-width: $border-width-thin;
 

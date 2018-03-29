@@ -2,7 +2,7 @@
 .button{    
     display: inline-block;
     $font-size: $font-size-m;
-    $padding-v: $spacing-0;
+    $padding-v: $spacing-xs;
     $padding-h: $spacing-m;
     $border-width: $border-width-thin;
 
@@ -176,7 +176,7 @@
 
 .size-normal{
     $font-size: $font-size-m;
-    $padding-v: $spacing-0;
+    $padding-v: $spacing-xs;
     $padding-h: $spacing-m;
     $border-width: $border-width-thin;
 
@@ -228,7 +228,7 @@
 }
 .icon-normal{
     $font-size: $font-size-m;
-    $padding-v: $spacing-0;
+    $padding-v: $spacing-xs;
     $padding-h: $padding-v;
     $border-width: $border-width-thin;
    
@@ -265,7 +265,7 @@
 }
 .icon-dropdown-normal{
     $font-size: $font-size-m;
-    $padding-v: $spacing-0;
+    $padding-v: $spacing-xs;
     $padding-h: $padding-v;
     $border-width: $border-width-thin;
 
