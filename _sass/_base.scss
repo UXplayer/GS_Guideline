@@ -6,7 +6,7 @@ body {
     margin: 0;
     display: block;
     color: $neutral-9;
-    font-size: 12px;
+	font-size: $font-size-m;
 	background: $neutral-1;
 }
 pre,textarea{
