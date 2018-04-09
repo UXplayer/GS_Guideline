@@ -4,7 +4,7 @@ $spacing-s: $size-unit * 1; // 较小间距 4
 $spacing-m: $size-unit * 2; // 标准间距 8
 $spacing-l: $size-unit * 3; // 较大间距 12
 
-// padding & spacer（控件之间的间距用 spacer 来实现，margin 一般都是 0px，个别情况下需要为负值）
+// padding & spacer（控件之间的间距用 spacer 来实现，margin 一般都是 0px，GroupButton、Tab 等个别情况下为负值）
 //// $spacing-s，一般用于小容器内的 spacer 和 padding，如按钮、MapNode
 //// $spacing-m，默认参数，绝大部分容器内的 padding 和 spacer 都默认为 $spacing-m，如 titlebar、toolbar、
 //// $spacing-l，一般用于浮动窗口最外层容器的 padding，如 Tooltips、UserInputDialog、BubbleDialog
@@ -54,7 +54,7 @@ $border-radius-m: $size-unit * 1;
 $border-radius-l: $size-unit * 2;
 $border-radius-max: $size-unit * 99; // QSS 不支持该设置，效果是最大圆角，即 min(height,width)/2
 
-// Text
+// 文字尺寸
 $font-size-s: round($font-size * 5/6); //10px
 $font-size-m: round($font-size * 6/6); //12px
 $font-size-l: round($font-size * 7/6); //14px
@@ -62,12 +62,12 @@ $font-size-heading-s: round($font-size * 9/6); //18px;
 $font-size-heading-m: round($font-size * 12/6); //24px
 $font-size-heading-l: round($font-size * 16/6); //32px;
 
-//行高，对应 font-size 的 3/2、1.5倍，并向上取偶数
+// 行高，对应 font-size 的 3/2、1.5倍，并向上取偶数
 $line-height-s: if(ceil($font-size-s * 3/2) % 2 == 0px, ceil($font-size-s * 3/2), ceil($font-size-s * 3/2) + 1); //16px
 $line-height-m: if(ceil($font-size-m * 3/2) % 2 == 0px, ceil($font-size-m * 3/2), ceil($font-size-m * 3/2) + 1); //18px
 $line-height-l: if(ceil($font-size-l * 3/2) % 2 == 0px, ceil($font-size-l * 3/2), ceil($font-size-l * 3/2) + 1); //22px
 
-//Icon，对应 font-size 的 4/3、1.333倍，并向上取偶数
+// Icon 尺寸，对应 font-size 的 4/3、1.333倍，并向上取偶数
 $icon-size-s: if(ceil($font-size-s * 4/3) % 2 == 0px, ceil($font-size-s * 4/3), ceil($font-size-s * 4/3) + 1); //14px
 $icon-size-m: if(ceil($font-size-m * 4/3) % 2 == 0px, ceil($font-size-m * 4/3), ceil($font-size-m * 4/3) + 1); //16px
 $icon-size-l: if(ceil($font-size-l * 4/3) % 2 == 0px, ceil($font-size-l * 4/3), ceil($font-size-l * 4/3) + 1); //20px
