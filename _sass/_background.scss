@@ -11,6 +11,49 @@
 	border-top: 1px solid $neutral-4
 }
 
+.ui{
+	padding: $spacing-m;
+    border: none;
+}
+.ui.header{
+	background-color:$neutral-3;
+	border-bottom:$border-width-thin solid $neutral-6;
+}
+.ui.topbar{
+	background-color:$neutral-2;
+	border-bottom:$border-width-thin solid $neutral-5;
+}
+.ui.body{
+	background-color:$neutral-1;
+}
+.ui.bottombar{
+	background-color:$neutral-2;
+	border-top:$border-width-thin solid $neutral-5;
+}
+.ui.footer{
+	background-color:$neutral-3;
+	border-top:$border-width-thin solid $neutral-6;
+}
+
+
+.ui.header.separator,
+.ui.footer.separator,
+{
+	line-color:$neutral-5;
+	color:$neutral-7;
+}
+.ui.topbar.separator,
+.ui.bottombar.separator{
+	line-color:$neutral-4;
+	color:$neutral-6;
+}
+.ui.body.separator{
+	line-color:$neutral-3;
+	color:$neutral-5;
+}
+
+
+
 .space-w-1,
 .space-w-2,
 .space-w-3

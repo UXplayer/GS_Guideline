@@ -7,135 +7,92 @@ QLabel{
 	color: $color-label-normal;
 }
 
-.size-heading-large{
-	font-size: $font-size-heading-l;
+.size-heading-l{
+    font-size: $font-size-heading-l;
 }
-.size-heading-medium{
-	font-size: $font-size-heading-m;
+.size-heading-m{
+    font-size: $font-size-heading-m;
 }
-.size-heading-small{
-	font-size: $font-size-heading-s;
+.size-heading-s{
+    font-size: $font-size-heading-s;
 }
-.size-title{
-	font-size: $font-size-l;
+.size-l{
+    font-size: $font-size-l;
 }
-.size-body{
-	font-size: $font-size-m;
+.size-m{
+    font-size: $font-size-m;
 }
-.size-caption{
-	font-size: $font-size-s;
+.size-s{
+    font-size: $font-size-s;
 }
 
 
-.color-inverse{
-	color: $color-label-inverse;	
-}
 .color-dark{
-	color: $color-label-dark;	
+    color: $color-label-dark;    
 }
 .color-normal{
-	color: $color-label-normal;	
+    color: $color-label-normal;    
 }
 .color-light{
-	color: $color-label-light;	
+    color: $color-label-light;    
 }
 .color-faint{
-	color: $color-label-faint;	
+    color: $color-label-faint;    
 }
 .color-info{
-	color: $color-label-info;	
+    color: $color-label-info;    
 }
 .color-success{
-	color: $color-label-success;	
+    color: $color-label-success;    
 }
 .color-warning{
-	color: $color-label-warning;	
+    color: $color-label-warning;    
 }
 .color-danger{
-	color: $color-label-danger;	
+    color: $color-label-danger;    
 }
 
+
+.label-heading-large{
+    font-size: $font-size-heading-l;
+    color: $color-label-dark;    
+}
+.label-heading-medium{
+    font-size: $font-size-heading-m;
+    color: $color-label-dark;    
+}
+.label-heading-small{
+    font-size: $font-size-heading-s;
+    color: $color-label-dark;    
+}
+.label-title{
+    font-size: $font-size-l;
+    color: $color-label-dark;    
+}
+.label-body{
+    font-size: $font-size-m;
+    color: $color-label-normal;    
+}
+.label-caption{
+    font-size: $font-size-m;
+    color: $color-label-light;  
+}
+.label-success{
+    font-size: $font-size-m;
+    color: $color-label-success;    
+}
+.label-warning{
+    font-size: $font-size-m;
+    color: $color-label-warning;    
+}
+.label-danger{
+    font-size: $font-size-m;
+    color: $color-label-danger;        
+}
 
 .input-name{    
 	$font-size: $font-size-m;
 	text-align: right;
 	font-size: $font-size;
 	color: $neutral-7;
-}
-
-
-QLabel{
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,"Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
-	font-size: 12px;
-	line-height: 12px;
-	color: $neutral-10;
-	vertical-align: middle;
-}
-
-QLabel[textSize="HeadingLarge"]{
-	font-size: $font-size-heading-l;
-	line-height: 32px;
-}
-
-QLabel[textSize="HeadingMedium"]{
-	font-size: $font-size-heading-l;
-	line-height: 24px;
-}
-
-QLabel[textSize="HeadingSmall"]{
-	font-size: 18px;
-	line-height: 18px;
-}
-
-QLabel[textSize="Title"]{
-	font-size: 14px;
-	line-height: 14px;
-}
-
-QLabel[textSize="Body"]{
-	font-size: 12px;
-	line-height: 12px;
-	color: $neutral-8;	
-}
-
-QLabel[textSize="Caption"]{
-	font-size: 10px;
-	line-height: 10px;
-	color: $neutral-6;	
-}
-
-
-QLabel[textColor="Dark"]{
-	color: $neutral-10;	
-}
-QLabel[textColor="Gentle"]{
-	color: $neutral-8;	
-}
-QLabel[textColor="Light"]{
-	color: $neutral-7;	
-}
-QLabel[textColor="Faint"]{
-	color: $neutral-6;	
-}
-QLabel[textColor="Info"]{
-	color: $primary-6;	
-}
-QLabel[textColor="Success"]{
-	color: $success-6;	
-}
-QLabel[textColor="Warning"]{
-	color: $warning-6;	
-}
-QLabel[textColor="Danger"]{
-	color: $danger-6;	
-}
-
-QLabel[textAlign="Left"]{
-	text-align: left;
-}
-QLabel[textAlign="Center"]{
-	text-align: center;
-}
-QLabel[textAlign="Right"]{
-	text-align: right;
 }
