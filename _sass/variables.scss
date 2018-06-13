@@ -1,8 +1,8 @@
 // spacing
-$spacing-xs: $size-unit / 2; // 最小间距，即使是两个紧挨着的控件之间也有一定的间距，而不是 0 间距（除了 Tab、GroupButton 之类互相重叠、间距为负的除外）
-$spacing-s: $size-unit * 1; // 较小间距 4 
-$spacing-m: $size-unit * 2; // 标准间距 8
-$spacing-l: $size-unit * 3; // 较大间距 12
+$spacing-xs: $size-unit / 2; //2px   最小间距，即使是两个紧挨着的控件之间也有一定的间距，而不是 0 间距（除了 Tab、GroupButton 之类互相重叠、间距为负的除外）
+$spacing-s: $size-unit * 1; //4px   较小间距 4 
+$spacing-m: $size-unit * 2; //8px   标准间距 8
+$spacing-l: $size-unit * 3; //12px   较大间距 12
 
 // padding & spacer（控件之间的间距用 spacer 来实现，margin 一般都是 0px，GroupButton、Tab 等个别情况下为负值）
 //// $spacing-s，一般用于小容器内的 spacer 和 padding，如按钮、MapNode
@@ -17,14 +17,20 @@ $spacing-l: $size-unit * 3; // 较大间距 12
 //////如，input 最多显示几个字、list 最多显示几行
 
 //background
-$background-color-1: $neutral-1; 
-$background-color-2: $neutral-2;
-$background-color-3: $neutral-3;
-$background-color-4: $neutral-4;
+$background-color-faint: $white; 
+$background-color-light: $neutral-1;
+$background-color-medium: $neutral-2;
+$background-color-dark: $neutral-3;
+$background-color-mask-modal: rgba( $neutral-8, .5 ); 
+
+//mask
+
+$background-color-mask-dark: rgba( $neutral-8, .5 ); 
 
 $background-color-mask-hover: rgba( $neutral-8, .18 ); 
 $background-color-mask-pressed: rgba( $neutral-8, .38 ); 
 $background-color-mask-disabled: rgba( $neutral-8, .08 ); 
+
 $background-color-mask-modal: rgba( $neutral-8, .5 ); 
 
 $background-color-mask-inverse-hover: rgba( $neutral-3, .18 ); 
@@ -32,54 +38,64 @@ $background-color-mask-inverse-pressed: rgba( $neutral-3, .38 );
 $background-color-mask-inverse-disabled: rgba( $neutral-3, .08 ); 
 $background-color-mask-inverse-modal: rgba( $neutral-3, .5 ); 
 
+//border-color
+$border-color-faint: $neutral-3;
+$border-color-light: $neutral-4;
+$border-color-medium: $neutral-5;
+$border-color-dark: $neutral-6;
+
+
+//同时适用于 TextColor 与 IconColor
+$color-label-dark: $neutral-10; //深灰
+$color-label-normal: $neutral-8; //默认颜色
+$color-label-light: $neutral-6; //浅灰
+$color-label-faint: $neutral-5; //淡浅灰
+$color-label-info: $primary-6; //蓝色
+$color-label-success: $success-6; //绿色
+$color-label-warning: $warning-6; //橙色
+$color-label-danger: $danger-6; //红色
+$color-label-inverse: $neutral-1; //反向颜色，用于深色背景
+
+
 //background-gradient
 $background-gradient-light-normal: linear-gradient(0deg, rgba( $white, 0), rgba( $white, 1));
 $background-gradient-light-gentle: linear-gradient(0deg, rgba( $white, 0), rgba( $white, 0.1));
 
-//border-color
-$border-color-dark: $neutral-6;
-$border-color-normal: $neutral-5;
-$border-color-light: $neutral-4;
-$border-color-faint: $neutral-3;
+
+
 
 //border-width
-$border-width-thin: 1px;
-$border-width-medium: $size-unit * 1/2;
-$border-width-thick: $size-unit * 1;
+$border-width-thin: 1px; //请假装这是公式 pow($size-unit,0)，scss 不支持幂运算
+$border-width-medium: $size-unit * 1/2; //2px
+$border-width-thick: $size-unit * 1; //4px
 
-//border-radius-0
-$border-radius-0: 0;
-$border-radius-s: $size-unit * 1/2;
-$border-radius-m: $size-unit * 1;
-$border-radius-l: $size-unit * 2;
-$border-radius-max: $size-unit * 99; // QSS 不支持该设置，效果是最大圆角，即 min(height,width)/2
+//border-radius
+$border-radius-s: $size-unit * 1/2; //2px
+$border-radius-m: $size-unit * 1; //4px
+$border-radius-l: $size-unit * 2; //8px
+$border-radius-max: $size-unit * 99; //最大半径
 
-// 文字尺寸
+ // QSS 不支持该设置，效果是最大圆角，即 min(height,width)/2
+
+//其他的字号均已标准字号为基础，计算得出
 $font-size-s: round($font-size * 5/6); //10px
 $font-size-m: round($font-size * 6/6); //12px
 $font-size-l: round($font-size * 7/6); //14px
+
 $font-size-heading-s: round($font-size * 9/6); //18px;
 $font-size-heading-m: round($font-size * 12/6); //24px
 $font-size-heading-l: round($font-size * 16/6); //32px;
 
-// 行高，对应 font-size 的 3/2、1.5倍，并向上取偶数
+// 行高，对应 font-size 的 1.5 倍，并向上取偶数
 $line-height-s: if(ceil($font-size-s * 3/2) % 2 == 0px, ceil($font-size-s * 3/2), ceil($font-size-s * 3/2) + 1); //16px
 $line-height-m: if(ceil($font-size-m * 3/2) % 2 == 0px, ceil($font-size-m * 3/2), ceil($font-size-m * 3/2) + 1); //18px
 $line-height-l: if(ceil($font-size-l * 3/2) % 2 == 0px, ceil($font-size-l * 3/2), ceil($font-size-l * 3/2) + 1); //22px
+$line-height-heading-s: if(ceil($font-size-heading-s * 3/2) % 2 == 0px, ceil($font-size-heading-s * 3/2), ceil($font-size-heading-s * 3/2) + 1); 
+$line-height-heading-m: if(ceil($font-size-heading-m * 3/2) % 2 == 0px, ceil($font-size-heading-m * 3/2), ceil($font-size-heading-m * 3/2) + 1); 
+$line-height-heading-l: if(ceil($font-size-heading-l * 3/2) % 2 == 0px, ceil($font-size-heading-l * 3/2), ceil($font-size-heading-l * 3/2) + 1); 
 
-// Icon 尺寸，对应 font-size 的 4/3、1.333倍，并向上取偶数
+// Icon 尺寸，对应 font-size 的 1.333 倍，并向上取偶数
 $icon-size-s: if(ceil($font-size-s * 4/3) % 2 == 0px, ceil($font-size-s * 4/3), ceil($font-size-s * 4/3) + 1); //14px
 $icon-size-m: if(ceil($font-size-m * 4/3) % 2 == 0px, ceil($font-size-m * 4/3), ceil($font-size-m * 4/3) + 1); //16px
 $icon-size-l: if(ceil($font-size-l * 4/3) % 2 == 0px, ceil($font-size-l * 4/3), ceil($font-size-l * 4/3) + 1); //20px
-
-// TextColor
-$color-label-dark: $neutral-10;
-$color-label-normal: $neutral-8;
-$color-label-light: $neutral-7;
-$color-label-faint: $neutral-5;
-$color-label-info: $primary-6;
-$color-label-success: $success-6;
-$color-label-warning: $warning-6;
-$color-label-danger: $danger-6;
-$color-label-inverse: $neutral-1;
 

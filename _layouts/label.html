@@ -4,7 +4,9 @@
 {% include head.html %}
 
 <body>
-
+		<div id="titlebar">
+			{% include titlebar.html %}
+		</div>
 		<div id="tabbar">
 			{% include tabbar.html %}
 		</div>
@@ -12,7 +14,6 @@
 			{% include toolbar.html %}
 		</div>
 		<div id="workspace">
-
 			<div id="main">	    
 				<div class="row">
 		   			<div class="col-12">
@@ -22,10 +23,11 @@
 				  	</div>
 			  	</div>   
 			</div>
-
 		</div>
-		<div id="statusbar"></div>
-{% include scripts.html %}
+		<div id="statusbar">
+			{% include statusbar.html %}
+		</div>
+	{% include scripts.html %}
 </body>
 
 </html>

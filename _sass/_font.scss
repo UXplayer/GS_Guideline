@@ -1,29 +1,39 @@
 
-QLabel{
+.QLabel{
     display: inline-block;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,"Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
+	
+    // size
 	font-size: $font-size-m;
 	line-height: $line-height-m;
-	color: $color-label-normal;
+
+    // color	color: $color-label-normal;
+
 }
 
 .size-heading-l{
     font-size: $font-size-heading-l;
+	line-height: $line-height-heading-l;
 }
 .size-heading-m{
     font-size: $font-size-heading-m;
+	line-height: $line-height-heading-m;
 }
 .size-heading-s{
     font-size: $font-size-heading-s;
+	line-height: $line-height-heading-s;
 }
 .size-l{
     font-size: $font-size-l;
+	line-height: $line-height-l;
 }
 .size-m{
     font-size: $font-size-m;
+	line-height: $line-height-m;
 }
 .size-s{
     font-size: $font-size-s;
+	line-height: $line-height-s;
 }
 
 
@@ -35,9 +45,6 @@ QLabel{
 }
 .color-light{
     color: $color-label-light;    
-}
-.color-faint{
-    color: $color-label-faint;    
 }
 .color-info{
     color: $color-label-info;    
@@ -51,43 +58,77 @@ QLabel{
 .color-danger{
     color: $color-label-danger;    
 }
+.color-inverse{
+    color: $color-label-inverse;    
+}
+
+
+
 
 
 .label-heading-large{
     font-size: $font-size-heading-l;
+	line-height: $line-height-heading-l;
     color: $color-label-dark;    
 }
 .label-heading-medium{
     font-size: $font-size-heading-m;
+	line-height: $line-height-heading-m;
     color: $color-label-dark;    
 }
 .label-heading-small{
     font-size: $font-size-heading-s;
+	line-height: $line-height-heading-s;
     color: $color-label-dark;    
 }
 .label-title{
     font-size: $font-size-l;
+	line-height: $line-height-l;
     color: $color-label-dark;    
 }
 .label-body{
     font-size: $font-size-m;
+	line-height: $line-height-m;
     color: $color-label-normal;    
 }
 .label-caption{
     font-size: $font-size-m;
+	line-height: $line-height-m;
     color: $color-label-light;  
 }
 .label-success{
     font-size: $font-size-m;
+	line-height: $line-height-m;
     color: $color-label-success;    
 }
 .label-warning{
     font-size: $font-size-m;
+	line-height: $line-height-m;
     color: $color-label-warning;    
 }
 .label-danger{
     font-size: $font-size-m;
+	line-height: $line-height-m;
     color: $color-label-danger;        
+}
+
+.label-heading-large.color-inverse{
+    color: $color-label-inverse;  
+}
+.label-heading-medium.color-inverse{
+    color: $color-label-inverse;  
+}
+.label-heading-small.color-inverse{
+    color: $color-label-inverse;  
+}
+.label-title.color-inverse{
+    color: $color-label-inverse;  
+}
+.label-body.color-inverse{
+    color: $color-label-inverse;   
+}
+.label-caption.color-inverse{
+    color: $color-label-inverse;  
 }
 
 .input-name{    

@@ -1,22 +1,22 @@
 .tab { 
     display: inline-block;
-	background: $neutral-5;
-    border: $border-width-thin solid $neutral-7;
+	background: $neutral-4;
+    border-right: $border-width-thin solid $neutral-7;
+    border-bottom: $border-width-thin solid $neutral-7;
 	color: $neutral-9;
     font-size: $font-size-m;
     line-height: $line-height-m;
     max-width: $icon-size-m + $spacing-s + $font-size-m * 6 + $spacing-s + $icon-size-m;
-    padding: $spacing-s $spacing-m;
-	margin-right: -5px; 
-	border-bottom: none;
+    padding: $spacing-xs $spacing-m;
+	margin-right: -3px; 
 } 
 .tab:hover{
-	background: $neutral-4;
+	background: $neutral-3;
 }
 
 .tab.selected{ 
-	background: $neutral-3;
-	border-bottom: none;
+	background: $neutral-2;
+    border-bottom: $border-width-thin solid $neutral-2;
 }
 
 .tab-close{ 

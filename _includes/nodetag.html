@@ -2,7 +2,7 @@
 	    <div class="row ui header">
 	   		<div class="col-12">
 	   			<div class="float-left">
-	   				<label class="label-title">Button</label>
+	   				<label class="label-title">NodeTag</label>
 	   			</div>
 		    </div>
 		</div>
@@ -19,35 +19,42 @@
    			<div class="row">
    				<div class="col-12">
 		   			<div class="uicell">
-				        <div class="QPushButton">normal</div>
+				        <div class="NodeTag">normal</div>
 			        </div>
 		        </div>
 	        </div>
    			<div class="row">
    				<div class="col-12">
 		   			<div class="uicell">
-				        <div class="QPushButton intent-primary" >primary</div>
+				        <div class="NodeTag selected" >selected</div>
 			        </div>
 		        </div>
 	        </div>
    			<div class="row">
    				<div class="col-12">
 		   			<div class="uicell">
-				        <div class="QPushButton intent-danger" >danger</div>
+				        <div class="NodeTag empty" >empty</div>
 			        </div>
 		        </div>
 	        </div>
    			<div class="row">
    				<div class="col-12">
 		   			<div class="uicell">
-				        <div class="QPushButton intent-link" >link</div>
+				        <div class="NodeTag emptyselected" >empty selected</div>
 			        </div>
 		        </div>
 	        </div>
    			<div class="row">
    				<div class="col-12">
 		   			<div class="uicell">
-				        <div class="QPushButton intent-plain" >plain</div>
+				        <div class="NodeTag plain" >plain</div>
+			        </div>
+		        </div>
+	        </div>
+   			<div class="row">
+   				<div class="col-12">
+		   			<div class="uicell">
+				        <div class="NodeTag plainselected" >plain selected</div>
 			        </div>
 		        </div>
 	        </div>
@@ -66,50 +73,60 @@
 	        <div class="row">
    				<div class="col-12">
 		   			<div class="uicell float-left">			      
-				        <div class="QPushButton">normal</div>
-				        <div class="QPushButton" onhover>hover</div>
-				        <div class="QPushButton" onactive>pressed</div>
-				        <div class="QPushButton" disabled>disabled</div>
+				        <div class="NodeTag">normal</div>
+				        <div class="NodeTag" onhover>hover</div>
+				        <div class="NodeTag" onactive>pressed</div>
+				        <div class="NodeTag" disabled>disabled</div>
 			        </div>
 		        </div>
 	        </div>
 	        <div class="row">
    				<div class="col-12">
 		   			<div class="uicell float-left">			      
-				        <div class="QPushButton intent-primary">normal</div>
-				        <div class="QPushButton intent-primary" onhover>hover</div>
-				        <div class="QPushButton intent-primary" onactive>pressed</div>
-				        <div class="QPushButton intent-primary" disabled>disabled</div>
+				        <div class="NodeTag selected">normal</div>
+				        <div class="NodeTag selected" onhover>hover</div>
+				        <div class="NodeTag selected" onactive>pressed</div>
+				        <div class="NodeTag selected" disabled>disabled</div>
 			        </div>
 		        </div>
 	        </div>
 	        <div class="row">
    				<div class="col-12">
 		   			<div class="uicell float-left">			      
-				        <div class="QPushButton intent-danger">normal</div>
-				        <div class="QPushButton intent-danger" onhover>hover</div>
-				        <div class="QPushButton intent-danger" onactive>pressed</div>
-				        <div class="QPushButton intent-danger" disabled>disabled</div>
+				        <div class="NodeTag empty">normal</div>
+				        <div class="NodeTag empty" onhover>hover</div>
+				        <div class="NodeTag empty" onactive>pressed</div>
+				        <div class="NodeTag empty" disabled>disabled</div>
 			        </div>
 		        </div>
 	        </div>
 	        <div class="row">
    				<div class="col-12">
 		   			<div class="uicell float-left">			      
-				        <div class="QPushButton intent-link">normal</div>
-				        <div class="QPushButton intent-link" onhover>hover</div>
-				        <div class="QPushButton intent-link" onactive>pressed</div>
-				        <div class="QPushButton intent-link" disabled>disabled</div>
+				        <div class="NodeTag emptyselected">normal</div>
+				        <div class="NodeTag emptyselected" onhover>hover</div>
+				        <div class="NodeTag emptyselected" onactive>pressed</div>
+				        <div class="NodeTag emptyselected" disabled>disabled</div>
 			        </div>
 		        </div>
 	        </div>
 	        <div class="row">
    				<div class="col-12">
 		   			<div class="uicell float-left">			      
-				        <div class="QPushButton intent-plain">normal</div>
-				        <div class="QPushButton intent-plain" onhover>hover</div>
-				        <div class="QPushButton intent-plain" onactive>pressed</div>
-				        <div class="QPushButton intent-plain" disabled>disabled</div>
+				        <div class="NodeTag plain">normal</div>
+				        <div class="NodeTag plain" onhover>hover</div>
+				        <div class="NodeTag plain" onactive>pressed</div>
+				        <div class="NodeTag plain" disabled>disabled</div>
+			        </div>
+		        </div>
+	        </div>
+	        <div class="row">
+   				<div class="col-12">
+		   			<div class="uicell float-left">			      
+				        <div class="NodeTag plainselected">normal</div>
+				        <div class="NodeTag plainselected" onhover>hover</div>
+				        <div class="NodeTag plainselected" onactive>pressed</div>
+				        <div class="NodeTag plainselected" disabled>disabled</div>
 			        </div>
 		        </div>
 	        </div>
@@ -127,9 +144,8 @@
    			<div class="row">
    				<div class="col-12">
 		   			<div class="uicell float-left">
-				        <div class="QPushButton size-small">small</div>
-						<div class="QPushButton size-small icon"><i class="fa fa-cog" title="Setting"></i></div>
-						<div class="QPushButton size-small icon dropdown"><i class="fa fa-caret-down" title="Setting"></i></div>
+				        <div class="NodeTag size-small">small</div>
+						<div class="NodeTag size-small icon"><i class="fa fa-cog" title="Setting"></i></div>
 			        </div>
 		        </div>
 	        </div>
@@ -137,7 +153,7 @@
    				<div class="col-12">
 		   			<div class="uicell">
 		   				<div class="fill">
-				        	<div class="QPushButton size-small fill">fill width:100%</div>
+				        	<div class="NodeTag size-small fill">fill width:100%</div>
 				    	</div>
 			        </div>
 		        </div>
@@ -145,9 +161,8 @@
    			<div class="row">
    				<div class="col-12">
 		   			<div class="uicell float-left">
-				        <div class="QPushButton size-normal">normal</div>
-						<div class="QPushButton size-normal icon"><i class="fa fa-cog fa-lg" title="Setting"></i></div>
-						<div class="QPushButton size-normal icon dropdown"><i class="fa fa-caret-down fa-lg" title="Setting"></i></div>
+				        <div class="NodeTag size-normal">normal</div>
+						<div class="NodeTag size-normal icon"><i class="fa fa-cog fa-lg" title="Setting"></i></div>
 			        </div>
 		        </div>
 	        </div>
@@ -155,7 +170,7 @@
    				<div class="col-12">
 		   			<div class="uicell">
 		   				<div class="fill">
-				        	<div class="QPushButton size-normal fill">fill width:100%</div>
+				        	<div class="NodeTag size-normal fill">fill width:100%</div>
 				    	</div>
 			        </div>
 		        </div>
@@ -163,9 +178,8 @@
    			<div class="row">
    				<div class="col-12">
 		   			<div class="uicell float-left">
-				        <div class="QPushButton size-large">large</div>
-						<div class="QPushButton size-large icon"><i class="fa fa-cog fa-lg" title="Setting"></i></div>
-						<div class="QPushButton size-large icon dropdown"><i class="fa fa-caret-down fa-lg" title="Setting"></i></div>
+				        <div class="NodeTag size-large">large</div>
+						<div class="NodeTag size-large icon"><i class="fa fa-cog fa-lg" title="Setting"></i></div>
 			        </div>
 		        </div>
 	        </div>
@@ -173,7 +187,7 @@
    				<div class="col-12">
 		   			<div class="uicell">
 		   				<div class="fill">
-				        	<div class="QPushButton size-large fill">fill width:100%</div>
+				        	<div class="NodeTag size-large fill">fill width:100%</div>
 				    	</div>
 			        </div>
 		        </div>

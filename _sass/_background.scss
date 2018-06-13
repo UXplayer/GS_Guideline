@@ -36,19 +36,28 @@
 }
 
 
-.ui.header.separator,
-.ui.footer.separator,
+.header.separator,
+.footer.separator,
 {
-	line-color:$neutral-5;
+	margin: 0 $spacing-m;
+	background-color:$neutral-5;
+	min-height:$border-width-thin;
+	max-height:$border-width-thin;
 	color:$neutral-7;
 }
-.ui.topbar.separator,
-.ui.bottombar.separator{
-	line-color:$neutral-4;
+.topbar.separator,
+.bottombar.separator{
+	margin: 0 $spacing-m;
+	background-color:$neutral-4;
+	min-height:$border-width-thin;
+	max-height:$border-width-thin;
 	color:$neutral-6;
 }
-.ui.body.separator{
-	line-color:$neutral-3;
+.body.separator{
+	margin: 0 $spacing-m;
+	background-color:$neutral-3;
+	min-height:$border-width-thin;
+	max-height:$border-width-thin;
 	color:$neutral-5;
 }
 
@@ -56,14 +65,17 @@
 
 .space-w-1,
 .space-w-2,
-.space-w-3
+.space-w-3,
+.space-h-1,
+.space-h-2,
+.space-h-3,
 {display: inline-block;}
 
-.space-w-1{	width: $spacing-s}
-.space-w-2{	width: $spacing-m}
-.space-w-3{	width: $spacing-l}
+.space-w-1{	min-width: $spacing-s}
+.space-w-2{	min-width: $spacing-m}
+.space-w-3{	min-width: $spacing-l}
 
-.space-h-1{	height: $spacing-s}
-.space-h-2{	height: $spacing-m}
-.space-h-3{	height: $spacing-l}
+.space-h-1{	min-height: $spacing-s}
+.space-h-2{	min-height: $spacing-m}
+.space-h-3{	min-height: $spacing-l}
 

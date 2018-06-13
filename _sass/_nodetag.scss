@@ -1,0 +1,188 @@
+/* 按钮的基本样式*/
+.NodeTag{    
+    display: inline-block;
+    text-align: center;
+
+    // size
+    min-width: $font-size-m * 3;
+    max-width: $font-size-m * 9;
+    padding: $spacing-xs $spacing-m;
+    margin: 0;
+    font-size: $font-size-m;
+    line-height: $line-height-m;   
+    border-radius: $border-radius-max;
+
+    // color
+    color: $color-label-normal;
+    background-color: rgba($neutral-6, .18);
+    border: $border-width-thin solid transparent;
+}
+
+/* 普通按钮的各个状态*/
+.NodeTag:hover, .NodeTag[onhover] {
+    background-color: rgba($neutral-6, .28);
+}
+
+.NodeTag:active, .NodeTag[onactive] {
+    background-color: rgba($neutral-6, .38);
+}
+.NodeTag[disabled]{ 
+    cursor: not-allowed;   
+    opacity: 0.5;
+}
+
+
+
+.normal {
+    background-color: rgba($neutral-6, .18);
+    color: $color-label-normal;
+}
+.normal:hover, .normal[onhover]{
+    background-color: rgba($neutral-6, .28);
+}
+.normal:active, .normal[onactive] {
+    background-color: rgba($neutral-6, .38);
+}
+.normal[disabled]{
+    background-color: rgba($neutral-6, .18);
+    color: $color-label-normal;
+    opacity: 0.5;
+}
+
+.selected {
+    background-color: rgba($primary-6, .18);
+    color: $color-label-info;
+}
+.selected:hover, .selected[onhover]{
+    background-color: rgba($primary-6, .28);
+}
+.selected:active, .selected[onactive] {
+    background-color: rgba($primary-6, .38);
+}
+.selected[disabled]{
+    background-color: rgba($primary-6, .18);
+    color: $color-label-info;
+    opacity: 0.5;
+}
+
+.plain{
+    background-color: transparent;
+    color: $color-label-normal;
+}
+.plain:hover, .plain[onhover]{
+    background-color: rgba($neutral-6, .28);
+}
+.plain:active, .plain[onactive] {
+    background-color: rgba($neutral-6, .38);
+}
+.plain[disabled]{
+    background-color: transparent;
+    color: $color-label-normal;
+    opacity: 0.5;
+}
+
+.plainselected{
+    background-color: transparent;
+    color: $color-label-info;    
+}
+.plainselected:hover, .plainselected[onhover]{
+    background-color: rgba($primary-6, .28);
+}
+.plainselected:active, .plainselected[onactive] {
+    background-color: rgba($primary-6, .38);
+}
+.plainselected[disabled]{
+    background-color: transparent;
+    color: $color-label-info;   
+    opacity: 0.5;
+}
+
+
+.empty {
+    background-color: transparent;
+    border-color: $neutral-6;
+}
+.empty:hover, .empty[onhover] {
+    background-color: transparent;
+    border-color: $neutral-5;
+}
+.empty:active, .empty[onactive] {
+    background-color: transparent;
+    border-color: $neutral-7;
+}
+.empty[disabled] {
+    background-color: transparent;
+    border-color: $neutral-6;
+    opacity: 0.5;
+}
+
+.emptyselected {
+    background-color: transparent;
+    border-color: $primary-6;
+    color: $color-label-info;
+}
+.emptyselected:hover, .emptyselected[onhover] {
+    background-color: transparent;
+    border-color: $primary-5;
+}
+.emptyselected:active, .emptyselected[onactive] {
+    background-color: transparent;
+    border-color: $primary-7;
+}
+.emptyselected[disabled] {
+    background-color: transparent;
+    border-color: $primary-6;
+    color: $color-label-info;
+    opacity: 0.5;
+}
+
+
+.NodeTag.size-small{
+    // height: $line-height-s;
+    min-width: $font-size-s * 3;
+    padding: 0 $spacing-s;
+    font-size: $font-size-s;
+    line-height: $line-height-s;
+}
+.NodeTag.size-small.icon{
+    min-width: $line-height-s;
+    padding-left: 0; 
+    padding-right: 0;   
+}
+
+.NodeTag.size-normal{
+    // height: $line-height-m;
+    min-width: $font-size-m * 3;
+    padding: $spacing-xs $spacing-m;
+    margin: 0;
+    font-size: $font-size-m;
+    line-height: $line-height-m;
+}
+.NodeTag.size-normal.icon{
+    min-width: $line-height-m;
+    max-width: $line-height-m;
+    padding-left: $spacing-xs; 
+    padding-right: $spacing-xs;   
+    margin: 0;
+}
+
+.NodeTag.size-large{
+    // height: $line-height-l;
+    min-width: $font-size-l * 3;
+    padding: $spacing-s $spacing-l;    
+    margin: 0;
+    font-size: $font-size-l;
+    line-height: $line-height-l;
+}
+.NodeTag.size-large.icon{
+    min-width: $line-height-l;
+    padding-left: $spacing-s; 
+    padding-right: $spacing-s;   
+}
+
+.NodeTag.fill{
+    min-width: 100%; // 宽度为 100%（由其父容器控制）  
+    box-sizing: border-box;
+}
+
+

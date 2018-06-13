@@ -1,20 +1,22 @@
 /* 按钮的基本样式*/
 .QPushButton{    
     display: inline-block;
+    text-align: center;
+    cursor: pointer;   
 
+    // size
     min-width: $font-size-m * 3;
     padding: $spacing-xs $spacing-m;
     margin: 0;
     font-size: $font-size-m;
-    line-height: $line-height-m;
+    line-height: $line-height-m;   
+    border-radius: $border-radius-m;
 
+    // color
     color: $color-label-normal;
-    text-align: center;
     background-color: $neutral-1;
     background-image: $background-gradient-light-normal;
     border: $border-width-thin solid $neutral-5;
-
-    border-radius: $border-radius-m;
 }
 
 /* 普通按钮的各个状态*/
@@ -26,7 +28,8 @@
     background-color: $neutral-2;
     background-image: none;
 }
-.QPushButton[disabled]{    
+.QPushButton[disabled]{  
+    cursor: not-allowed;  
     color: $neutral-7;
     background-color: $neutral-4;
     background-image: none;
@@ -87,6 +90,7 @@
 /* intent-link 无框按钮的状态样式 */
 .intent-link {
     color: $primary-6;
+    text-decoration: none;
     background: transparent;
     border-color: transparent;
 }
@@ -104,6 +108,7 @@
 }
 .intent-link[disabled]{
     color: $primary-4;
+    text-decoration: none;
     background: transparent;
     border-color: transparent;
     opacity: 0.8;
@@ -183,17 +188,20 @@
 }
 .size-normal.icon{
     min-width: $line-height-m;
+    max-width: $line-height-m;
     padding-left: $spacing-xs; 
     padding-right: $spacing-xs;   
+    margin: 0;
 }
 .size-normal.dropdown{
     min-width: $line-height-m / 2;
+    margin: 0;
 }
 
 .size-large{
     // height: $line-height-l;
     min-width: $font-size-l * 3;
-    padding: $spacing-s $spacing-l;
+    padding: $spacing-s $spacing-l;    
     margin: 0;
     font-size: $font-size-l;
     line-height: $line-height-l;
