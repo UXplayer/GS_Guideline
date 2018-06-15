@@ -1,0 +1,44 @@
+.avatar {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  background:none;
+  border:none;
+
+  min-width: $icon-size-heading-m;
+  min-height: $icon-size-heading-m;
+  max-width: $icon-size-heading-m;
+  max-height: $icon-size-heading-m;
+  border-radius: $border-radius-max;
+}
+.avatar img{
+	max-width: 100%;
+	height: auto;
+}
+
+.avatar.small{
+  min-width: $icon-size-l;
+  min-height: $icon-size-l;
+  max-width: $icon-size-l;
+  max-height: $icon-size-l;
+}
+.avatar.medium{
+  min-width: $icon-size-heading-m;
+  min-height: $icon-size-heading-m;
+  max-width: $icon-size-heading-m;
+  max-height: $icon-size-heading-m;
+}
+.avatar.large{
+  min-width: $icon-size-heading-l;
+  min-height: $icon-size-heading-l;
+  max-width: $icon-size-heading-l;
+  max-height: $icon-size-heading-l;
+}
+
+
+.avatar.square{
+  border-radius: $border-radius-m;
+}
+.avatar.circle{
+  border-radius: $border-radius-max;
+}

@@ -98,4 +98,8 @@ $line-height-heading-l: if(ceil($font-size-heading-l * 3/2) % 2 == 0px, ceil($fo
 $icon-size-s: if(ceil($font-size-s * 4/3) % 2 == 0px, ceil($font-size-s * 4/3), ceil($font-size-s * 4/3) + 1); //14px
 $icon-size-m: if(ceil($font-size-m * 4/3) % 2 == 0px, ceil($font-size-m * 4/3), ceil($font-size-m * 4/3) + 1); //16px
 $icon-size-l: if(ceil($font-size-l * 4/3) % 2 == 0px, ceil($font-size-l * 4/3), ceil($font-size-l * 4/3) + 1); //20px
+$icon-size-heading-s: if(ceil($font-size-heading-s * 3/2) % 2 == 0px, ceil($font-size-heading-s * 3/2), ceil($font-size-heading-s * 3/2) + 1); 
+$icon-size-heading-m: if(ceil($font-size-heading-m * 3/2) % 2 == 0px, ceil($font-size-heading-m * 3/2), ceil($font-size-heading-m * 3/2) + 1); 
+$icon-size-heading-l: if(ceil($font-size-heading-l * 3/2) % 2 == 0px, ceil($font-size-heading-l * 3/2), ceil($font-size-heading-l * 3/2) + 1); 
+
 
