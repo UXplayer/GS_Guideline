@@ -1,5 +1,8 @@
 # GS_Guideline
 
+>演示地址
+http://gs.uxplayer.com/
+
 ### 基础文件
 - colors.scss
   - 内含全部的 Color Palette
