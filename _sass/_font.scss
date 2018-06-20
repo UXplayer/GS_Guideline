@@ -36,6 +36,30 @@
 	line-height: $line-height-s;
 }
 
+.icon-size-heading-l{
+    font-size: $icon-size-heading-l;
+    line-height: $line-height-heading-l;
+}
+.icon-size-heading-m{
+    font-size: $icon-size-heading-m;
+    line-height: $line-height-heading-m;
+}
+.icon-size-heading-s{
+    font-size: $icon-size-heading-s;
+    line-height: $line-height-heading-s;
+}
+.icon-size-l{
+    font-size: $icon-size-l;
+    line-height: $line-height-l;
+}
+.icon-size-m{
+    font-size: $icon-size-m;
+    line-height: $line-height-m;
+}
+.icon-size-s{
+    font-size: $icon-size-s;
+    line-height: $line-height-s;
+}
 
 .color-dark{
     color: $color-label-dark;    
@@ -131,9 +155,11 @@
     color: $color-label-inverse;  
 }
 
-.input-name{    
-	$font-size: $font-size-m;
-	text-align: right;
-	font-size: $font-size;
-	color: $neutral-7;
+.paraname{        
+    padding: $spacing-xs 0;
+	font-size: $font-size-m;
+    line-height: $line-height-m;
+	color: $color-label-light;
+    border: $border-width-thin solid transparent;
 }
+

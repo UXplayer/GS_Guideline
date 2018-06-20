@@ -6,9 +6,10 @@
 	color: $neutral-9;
     font-size: $font-size-m;
     line-height: $line-height-m;
-    max-width: $icon-size-m + $spacing-s + $font-size-m * 6 + $spacing-s + $icon-size-m;
+    min-width: $icon-size-m + $spacing-s + $font-size-m * 4 + $spacing-s + $icon-size-m + $border-width-thin;
+    max-width: $icon-size-m + $spacing-s + $font-size-m * 12 + $spacing-s + $icon-size-m + $border-width-thin;
     padding: $spacing-xs $spacing-m;
-	margin-right: -3px; 
+	margin-right: -3.4px; 
 } 
 .tab:hover{
 	background: $neutral-3;
@@ -25,3 +26,6 @@
 }
 
 
+.tab.home{ 
+    min-width: 0;
+}

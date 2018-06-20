@@ -6,7 +6,7 @@
 
     // size
     min-width: $font-size * 9; 
-    padding: $spacing-xs $spacing-m;
+    padding: $spacing-xs $spacing-s;
     font-size: $font-size-m;
     line-height: $line-height-m;
     color: $neutral-10;
@@ -51,6 +51,12 @@
 
 .QLineEdit.nodeinput{
     border-radius: $border-radius-max;
+}
+
+
+.QLineEdit.nobg{
+    background-color:transparent;
+    border: $border-width-thin solid transparent;
 }
 input::-webkit-input-placeholder { color: $neutral-6; }
 input::-moz-placeholder { color: $neutral-6; }

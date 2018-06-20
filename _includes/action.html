@@ -1,0 +1,62 @@
+<section id="input" class="container">
+	<div class="uigroup">
+	    <div class="row ui header">
+	   		<div class="col-12">
+	   			<div class="float-left">
+	   				<label class="label-title">Action</label>
+	   			</div>
+		    </div>
+		</div>
+
+
+	    <div class="row">
+	  		<!-- ParameterType -->
+
+	    	<!-- Size -->
+	   		<div class="col-4">
+
+	   			<div class="row"> 
+	   				<div class="uicell">
+		   				<div class="col-12 actionbox"  
+		   				onmouseover="javascript:removeClass(document.getElementById('actionpara'),'nobg'); javascript:removeClass(document.getElementById('actionrun'),'hide')" 
+		   				onmouseout="javascript:addClass(document.getElementById('actionpara'),'nobg') ; javascript:addClass(document.getElementById('actionrun'),'hide')">
+				   			<div class="row">
+				   				<div class="float-left paraname">
+			   						<i class="fa fa-plus-circle fa-md "></i><div class="space-w-1"></div>Action Name
+		   						</div>
+				   				<div class="float-right">
+			   						 <div  id="actionrun" class="QPushButton size-normal icon intent-link hide" title="run">
+				   						<i class="fa fa-play-circle fa-md"></i>
+			   						 </div>
+		   						</div>
+		   					</div>
+				
+				   			<div class="col-12">
+<!-- 								<div class="float-left">
+									<i class="fa fa-location-arrow icon-size-m hide"></i><div class="space-w-1"></div>
+								</div> -->
+								<div style="padding-left: 16px;">
+									<input id="actionpara" class="QLineEdit size-fill nobg" value="parameter">
+								</div>
+					      	</div>
+			       		 </div>
+		       		 </div>
+		   		 </div>
+
+	    	</div>	
+
+	    </div>
+
+
+		<div class="row">  
+	    	<!-- Code -->	    	
+	   		<div class="col-12 loat-left">
+	   			<div class="uicell">
+<!-- 					<pre>
+						<code>{% include input_code.css %}</code>
+					</pre> -->
+		        </div>
+		    </div>
+    	</div>
+    </div>
+</section>

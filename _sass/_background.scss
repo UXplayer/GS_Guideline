@@ -61,7 +61,18 @@
 	color:$neutral-5;
 }
 
+.actionbox{
+	padding: $spacing-m;
+	background-color:transparent;
+	border: $border-width-thin solid transparent;
+    border-radius: $border-radius-m;
+}
+.actionbox:hover{
+	background-color:$neutral-2;
+	border: $border-width-thin solid $neutral-5;
+}
 
+.hide{visibility: hidden;}
 
 .space-w-1,
 .space-w-2,
@@ -71,11 +82,11 @@
 .space-h-3,
 {display: inline-block;}
 
-.space-w-1{	min-width: $spacing-s}
-.space-w-2{	min-width: $spacing-m}
-.space-w-3{	min-width: $spacing-l}
+.space-w-1{	min-width: $spacing-s; max-width: $spacing-s; min-height: $spacing-s; max-height: $spacing-s;}
+.space-w-2{	min-width: $spacing-m; max-width: $spacing-m; min-height: $spacing-m; max-height: $spacing-m;}
+.space-w-3{	min-width: $spacing-l; max-width: $spacing-l; min-height: $spacing-l; max-height: $spacing-l;}
 
-.space-h-1{	min-height: $spacing-s}
-.space-h-2{	min-height: $spacing-m}
-.space-h-3{	min-height: $spacing-l}
+.space-h-1{	min-width: $spacing-s; max-width: $spacing-s; min-height: $spacing-s; max-height: $spacing-s;}
+.space-h-2{	min-width: $spacing-m; max-width: $spacing-m; min-height: $spacing-m; max-height: $spacing-m;}
+.space-h-3{	min-width: $spacing-l; max-width: $spacing-l; min-height: $spacing-l; max-height: $spacing-l;}
 

@@ -21,19 +21,22 @@
 }
 /* makes the font 33% larger relative to the icon container */
 .fa-sm {
-  font-size: 1em;
-  line-height: 0.75em;
-  vertical-align: -15%;
+  font-size: 14px;
+  line-height: 14px;  
+  min-width: 14px;
+  vertical-align: -4%;
 }
 .fa-md {
-  font-size: 1.33333333em;
-  line-height: 0.85em;
-  vertical-align: -15%;
+  font-size: 16px;
+  line-height: 16px;
+  min-width: 16px;
+  vertical-align: -8%;
 }
 .fa-lg {
-  font-size: 1.5em;
-  line-height: 1em;
-  vertical-align: -15%;
+  font-size: 20px;
+  line-height: 20px;
+  min-width: 20px;
+  vertical-align: -10%;
 }
 .fa-2x {
   font-size: 2em;
